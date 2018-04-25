@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AGUtmpl.tex: this template file is for articles formatted with LaTeX2e,
+% Modified July 2014
+%
+% This template includes commands and instructions
+% given in the order necessary to produce a final output that will
+% satisfy AGU requirements.
+%
+% PLEASE DO NOT USE YOUR OWN MACROS
+% DO NOT USE \newcommand, \renewcommand, or \def.
+%
+% FOR FIGURES, DO NOT USE \psfrag or \subfigure.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% All questions should be e-mailed to latex@agu.org.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Step 1: Set the \documentclass
+%
+% There are two options for article format: two column (default)
+% and draft.
+%
+% PLEASE USE THE DRAFT OPTION TO SUBMIT YOUR PAPERS.
+% The draft option produces double spaced output.
+%
+% Choose the journal abbreviation for the journal you are
+% submitting to:
+
+% jgrga JOURNAL OF GEOPHYSICAL RESEARCH
+% gbc   GLOBAL BIOCHEMICAL CYCLES
+% grl   GEOPHYSICAL RESEARCH LETTERS
+% pal   PALEOCEANOGRAPHY
+% ras   RADIO SCIENCE
+% rog   REVIEWS OF GEOPHYSICS
+% tec   TECTONICS
+% wrr   WATER RESOURCES RESEARCH
+% gc    GEOCHEMISTRY, GEOPHYSICS, GEOSYSTEMS
+% sw    SPACE WEATHER
+% ms    JAMES
+% ef    EARTH'S FUTURE
+% ea    EARTH AND SPACE SCIENCE
+%
+%
+%
+% (If you are submitting to a journal other than jgrga,
+% substitute the initials of the journal for "jgrga" below.)
+
+\documentclass[draft,ms]{agutex}   %draft, [ms]
+% To create numbered lines:
+
+% If you don't already have lineno.sty, you can download it from
+% http://www.ctan.org/tex-archive/macros/latex/contrib/ednotes/
+% (or search the internet for lineno.sty ctan), available at TeX Archive Network (CTAN).
+% Take care that you always use the latest version.
+
+% To activate the commands, uncomment \usepackage{lineno}
+% and \linenumbers*[1]command, below:
+
+\usepackage{lineno}
+\linenumbers*[1]
+%  To add line numbers to lines with equations:
+%  \begin{linenomath*}
+%  \begin{equation}
+%  \end{equation}
+%  \end{linenomath*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{rotating} 
+
+\usepackage[bottom]{footmisc}
+
+\usepackage{graphics}
+
+%\usepackage[dvips]{graphicx}
+ 
+\usepackage{color}
+\definecolor{pinkred}{rgb}{1.0, 0.4, 0.4}
+
+% Author names in capital letters:
+\authorrunninghead{HUANG ET AL.}
+
+% Shorter version of title entered in capital letters:
+\titlerunninghead{Modeling and Evaluation of the Extreme ARs}
+
+%Corresponding author mailing address and e-mail address:
+\authoraddr{Corresponding author: Xingying Huang,
+Department of Atmospheric and Oceanic Sciences, \\
+ University of California, Los Angeles, Los Angeles, CA 90095, USA.
+ (xingyhuang@atmos.ucla.edu)}
+ 
+%Department of Hydrology and Water Resources, University of
+%Arizona, Harshbarger Building 11, Tucson, AZ 85721, USA.
+%(a.b.smith@hwr.arizona.edu)}
+
+\begin{document}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  TITLE
+%
+%% ------------------------------------------------------------------------ %%
+
+%GRL, Climate Dynamics
+
+
+\title{Modeling and Evaluation of the Extreme Historical Atmospheric Rivers 
+Over the U.S. West Coast}
+
+    \authors{Xingying Huang,\altaffilmark{1}
+ Daniel Walton, \altaffilmark{1} Daniel Swain, \altaffilmark{1} 
+ Neil Berg, \altaffilmark{1} Alex D. Hall, \altaffilmark{1}}
+
+\altaffiltext{1}{Department of Atmospheric and Oceanic Sciences, University of California, Los Angeles}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ABSTRACT
+%
+% Enter your Abstract here
+
+\begin{abstract}
+
+
+\end{abstract} 
+
+\begin{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MAIN BODY OF PAPER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Introduction}
+
+Majority of the annual precipitation and resulted water sources, over the U.S. West Coast, are contributed to a few intense Atmospheric Rivers (ARs) events, which are defined as narrow and filamentary corridors of enhanced water vapor flux transported poleward and eastward especially into the extratropics \citep{zhu1998proposed, ralph2004satellite}. Accompanied by the heavy rain, severe flooding can also occur associated with the landfalling confronting the complex coastal and inland mountainous regions particular over the Cascades and the Sierra Nevada area \citep{ralph2006flooding, neiman2011flooding}.
+
+Extensive studies have worked on the characteristics and historical evolution of the ARs over the western U.S. \citep{rutz2014climatological, dettinger2011atmospheric}, (\citep{rutz2014climatological, dettinger2013atmospheric, jackson2016evaluation}) (add summary here).  {\color{red}(To be added by Xingying)}
+
+Existing studies about the ARs, precipitation extremes and SWE changes by the end of 21st century. (\citep{gao2015dynamical, dominguez2012changes, warner2015changes, guan2010extreme}) {\color{red}(To be added by Xingying)}
+
+Similar studies using WRF for AR simulations (\citep{leung2009atmospheric}), our new strategies, goals and potential outcomes.  {\color{red}(To be added by Xingying)}
+
+({\color{red}Feel free to add input here.})
+
+%AR with rain-on-snow effect \citep{guan2016hydrometeorological}, ARs with ROS effect vs without the effect
+%Evaluation paper: \citep{kim2018winter} "Winter precipitation characteristics in western US related to atmospheric river landfalls: observations and model evaluations"
+
+%High-resolution, Duel-jets
+
+\section{Models and Methodology}
+
+(section for the WRF modeling setup, AR selection method, and observational measurements) (comment: the structure of this section will be reordered later.)
+
+\subsection{Downscaling Simulation Design}
+
+In order to represent AR features at high-resolution under modeling, WRF (Weather Research and Forecasting Model) \citep{skamarock2008time} Version 3.8.1 has been used to dynamically downscale coarse reanalysis data over the western U.S. coast till 3 km. As a widely recognized regional climate model over the past decade, WRF has been proved to be a reliable model in capture both long-term regional climatology and short-term weather forecasting \citep{leung2009atmospheric, soares2012wrf, sun2015hybrid}.
+
+The ECMWF Reanalysis (ERA-Interim) data ($\sim$80 km) is applied to force WRF at both the surface and multiple pressure-levels providing both initial and lateral conditions for the domains every six hours. ERA-Interim reanalysis has been widely used and validated for its reliability as forcing data \citep{dee2011era}. Compared to the aircraft observations over the northeastern Pacific, ERA-Interim IVT can well represent the main AR features \citep{ralph2012atmospheric}. In our study, selected AR events are retrieved from ERA-Interim reanalysis based on the ARs detection method as described below.
+
+The simulation domains of WRF from outermost to the innermost, including 81 km, 27 km, 9 km and 3 km ones, are depicted in Figure xx with western U.S. coast centered in the domains. A series of test cases have been conducted first to optimize the domain setting and parameterization configurations of the WRF, with the selection of New Thompson microphysics scheme \citep{thompson2008explicit}. Spectral nudging was employed over the outer domain above the boundary layer to reduce drift between ERA-Interim forcing data and WRF's internal tendencies \citep{von2000spectral}. This setup uses 44 vertical levels with model top pressure at 50 hPa.
+
+\subsection{Atmospheric Rivers Detection Methods}
+
+(section for the AR detection algorithms for the selected simulation events) {\color{red}(Input from Daniel W.)}
+
+%%%\citep{guan2015detection}
+
+\subsection{Observational Measurements}
+
+Reanalysis, gridded observational dataset, and station-based measurements of the highest available quality are employed. It is important to use multiple of sources of observations for simulation evaluation to account for the uncertainty underlying the measurements and post-processing algorithms. Detailed descriptions of these datasets are as follows.
+
+\paragraph{MERRA-2} Modern?Era Retrospective Analysis for Research and Applications (MERRA) \citep{rienecker2011merra} (to add description here) {\color{red}(To be added by Xingying)}
+
+\paragraph{PRISM} The Parameter-elevation Regressions on Independent Slopes Model (PRISM) \citep{daly2008physiographically} supports a 4 km gridded dataset obtained by taking point measurements and applying a weighted regression scheme that accounts for many factors affecting the local climatology. Daily precipitation dataset is available for 1895 through 2014 from the PRISM Climate Group (Oregon State University, \url{http://prism.oregonstate.edu}, created 4 Feb 2004). Notably, PRISM is the United States Department of Agriculture's official climatological dataset.
+
+\paragraph{Station-based dataset} (to add description here) {\color{red}(Input from Daniel W.)}
+
+
+\section{Results}
+
+
+\subsection{Large-scale features of the ARs}
+
+{\color{red}(To be drafted by Xingying and others who'd like to share input)}
+
+(Resolution effects, IVT, intensity, duration, large-scale circulation, wind profile, moisture stability), three dimensional moisture flux (structure, high-resolution)
+
+\subsection{ARs landfalling and Precipitation}
+
+(Resolution effects, the regional topographic Effects, ocean-land interface, the resulted precipitation) {\color{red}(To be drafted by Daniel W., Xingying and others who'd like to share input)}
+
+(PRISM: {\color{red}(To be drafted by Xingying)})
+
+(Analysis based on Station-based Observations: {\color{red}(Input from Daniel W.)})
+
+%\citep{payne2014dynamics, ralph2013observed, rutz2014climatological}
+
+%citep{ralph2013observed, rutz2014climatological}
+
+\section{Discussions and Summary}
+
+{\color{red}(To be wrapped up by Xingying, Daniel W. and others who'd like to share input)}
+
+%\citep{guan2012does, hay2003use, hagos2016projection, mundhenk2016modulation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgments}
+
+The authors would like to thank . We also want to thank . We acknowledge the work done to create the following datasets used in this study including MERRA-2, PRISM, and (station observations). The simulation data used is available by request at xingyhuang@ucla.edu. This project is supported in part by and by the .
+
+\end{acknowledgments}
+
+% REFERENCE LIST AND TEXT CITATIONS
+
+\bibliographystyle{agufull08}
+\bibliography{references}
+
+\end{article}
+
+%\section{Figures and tables}
+
+% TABLES
+\clearpage
+
+%%%%%%%%%%%Table1%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\subsection{Figures}
+
+%Figure 1
+
+
+
+\end{document}

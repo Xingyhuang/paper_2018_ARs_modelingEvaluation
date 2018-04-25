@@ -1,0 +1,2771 @@
+%%
+% JOURNAL ABBREVIATIONS
+%
+@STRING{AMS 	= "Amer.\ Meteor.\ Soc."}
+@STRING{AGU 	= "Amer.\ Geophys.\ Union"}
+@STRING{AIP 	= "Amer. Inst. Phys."}
+@STRING{ADGEO     = "Adv.\ Geosci."}
+@STRING{AFM       = "Agric.\ For.\ Meteor."}
+@STRING{AM        = "Ann.\ Meteor."}
+@STRING{AN        = "Astrophys.\ Norv."}		% Astrophysica Norvegica
+@STRING{AO        = "Atmos.--Ocean"}			% Atmosphere--Ocean, published by Canadian Meteorological Society (CMOS)
+@STRING{AR        = "Atmos.\ Res."}			% Atmospheric Research
+@STRING{ARFM      = "Annu.\ Rev.\ Fluid Mech."}
+@STRING{AUMET     = "Aust.\ Meteor.\ Mag."}
+@STRING{BAMS      = "Bull.\ Amer.\ Meteor.\ Soc."}
+@STRING{CAP       = "Contrib.\ Atmos.\ Phys."}
+@STRING{CC        = "Climate Change"}      % Climate Change 
+@STRING{CCH       = "Climatic Change"}			% Climatic Change
+@STRING{CDYN      = "Climate Dyn."}
+@STRING{CHAOS     = "Chaos"}
+@STRING{COL       = "Collier's"}
+@STRING{CRS       = "Cont.\ Shelf Res."}
+@STRING{DAO       = "Dyn.\ Atmos.\ Oceans"}
+@STRING{ECO       = "Ecology"}
+@STRING{EI        = "Earth Interact."}
+@STRING{GA        = "Geophysica"}			% Geophysica, published by Geophysical Society of Finland 
+@STRING{GEOMAG    = "Geophys.\ Mag."}
+@STRING{GN        = "Geophys.\ Norv."}			% Geophysica Norvegica
+@STRING{GRL       = "Geophys.\ Res.\ Lett."}
+@STRING{GEOINT    = "Geofis.\ Int."}			% Geofisica Internacional (Mexican journal -- vols. 3--5 contained proceedings from a hurricane conference
+@STRING{GEOPUB    = "Geofys.\ Publ."}
+@STRING{GPC       = "Global Planet.\ Change"}
+@STRING{HP        = "Health Phys."}
+@STRING{IAOP      = "Izv.\ Atmos.\ Ocean.\ Phys.\ (Engl.\ Transl.)"}
+@STRING{IJC       = "Int.\ J.\ Climatol."}
+@STRING{JAM       = "J.\ Appl.\ Meteor."}		% renamed to name below in 2006
+@STRING{JAMC      = "J.\ Appl.\ Meteor.\ Climatol."}  	% Journal of Applied Meteorology and Climatology (this journal used to be called the Journal of Applied Meteorology before 2006)
+@STRING{JAS       = "J.\ Atmos.\ Sci."}
+@STRING{JAOT      = "J.\ Atmos.\ Oceanic Technol."}
+@STRING{JCAM      = "J.\ Climate Appl.\ Meteor."}	% from 1983--87, now JAMC
+@STRING{JCLI      = "J.\ Climate"}
+@STRING{JCR       = "J.\ Coastal Res."}
+@STRING{JFM       = "J.\ Fluid\ Mech."}
+@STRING{JEM       = "J.\ Eng.\ Math."}			% Journal of Engineering Mathematics
+@STRING{JGR       = "J.\ Geophys.\ Res."}
+@STRING{JHM       = "J.\ Hydrometeor."}
+@STRING{JMS       = "J.\ Mar.\ Syst."}
+@STRING{JM        = "J.\ Meteor."}
+@STRING{JMR       = "J.\ Mar.\ Res."}
+@STRING{JMSJ      = "J.\ Meteor.\ Soc.\ Japan"}
+@STRING{JPO       = "J.\ Phys.\ Oceanogr."}
+@STRING{JOCEAN    = "J.\ Oceanogr."}			% Journal of Oceanography
+@STRING{JOSJ      = "J.\ Oceanogr.\ Soc.\ Japan"}
+@STRING{JSE       = "J.\ Struct.\ Eng."}	% Journal of Structural Engineering at ASCE
+@STRING{JTM       = "J.\ Tropical Meteor."}
+@STRING{JWEIA     = "J.\ Wind Eng.\ Ind.\ Aerodyn."}
+@STRING{MA        = "Meteor.\ Appl."}
+@STRING{MAP       = "Meteor.\ Atmos.\ Phys."}
+@STRING{METMON    = "Meteor.\ Monogr."}
+@STRING{METZEIT   = "Meteor.\ Z."}
+@STRING{MWL       = "Mar.\ Wea.\ Log"}
+@STRING{MWR       = "Mon.\ Wea.\ Rev."}
+@STRING{NAT       = "Nature"}
+@STRING{NHR       = "Nat.\ Hazards Rev."}
+@STRING{NWD       = "Natl.\ Weather Dig."}
+@STRING{OA        = "Oceanol. Aeta"}
+@STRING{OCEAN     = "Oceanography"}                	% a quarterly journal of The Oceanography Society
+@STRING{PAG       = "Pure Appl.\ Geophys."}
+@STRING{PF        = "Phys.\ Fluids"}
+@STRING{PHYSD     = "Physica D"}
+@STRING{PMG       = "Pap.\ Meteor.\ Geophys."}	% Papers in Meteorology and Geophysics
+@STRING{PNAS      = "Proc.\ Natl.\ Acad.\ Sci.\ (USA)"}
+@STRING{PRE       = "Phys.\ Rev.\ E"}
+@STRING{PRSA      = "Proc.\ Roy.\ Soc."}
+@STRING{PT        = "Phys.\ Today"}
+@STRING{PTRS      = "Philos.\ Trans.\ Roy.\ Soc.\ London"}
+@STRING{QJRMS     = "Quart.\ J.\ Roy.\ Meteor.\ Soc."}
+@STRING{RGEO      = "Rev. Geophys."}
+@STRING{SCI       = "Science"}
+@STRING{SOLA      = "SOLA"}				% Scientific Online Letters on the Atmosphere
+@STRING{TAGU      = "Eos, Trans.\ Amer.\ Geophys.\ Union"}
+@STRING{TELLUS    = "Tellus"}
+@STRING{TCFD      = "Theor.\ Comput.\ Fluid Dyn."}
+@STRING{WEA       = "Weather"}
+@STRING{WW        = "Weatherwise"}
+@STRING{WF        = "Wea.\ Forecasting"}
+@STRING{WMOB      = "WMO Bull."}
+
+%Journal article database entry
+@incollection{flato2013evaluation,
+  title={Evaluation of climate models},
+  author={Flato, G and Marotzke, Jochem and Abiodun, B and Braconnot, P and Chou, SC and Collins, W and Cox, P and Driouech, F and Emori, S and Eyring, V and others},
+  booktitle={Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change},
+  pages={741--866},
+  year={2013},
+  publisher={Cambridge University Press}
+}
+
+@article{soares2012wrf,
+  title="{WRF high resolution dynamical downscaling of ERA-Interim for Portugal}",
+  author={Soares, Pedro MM and Cardoso, Rita M and Miranda, Pedro MA and de Medeiros, Joana and Belo-Pereira, Margarida and Espirito-Santo, F{\'a}tima},
+  journal={Climate dynamics},
+  volume={39},
+  number={9-10},
+  pages={2497--2522},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{seneviratne2012changes,
+  title={Changes in climate extremes and their impacts on the natural physical environment},
+  author={Seneviratne, Sonia I and Nicholls, Neville and Easterling, David and Goodess, CM and Kanae, Shinjiro and Kossin, James and Luo, Yali and Marengo, Jose and McInnes, Kathleen and Rahimi, M and others},
+  journal={Managing the risks of extreme events and disasters to advance climate change adaptation},
+  pages={109--230},
+  year={2012},
+  publisher={A Special Report of Working Groups I and II of the Intergovernmental Panel on Climate Change (IPCC), Cambridge University Press, Cambridge, UK, and New York, NY, USA},
+  
+}
+
+@article{laprise2008challenging,
+  title={Challenging some tenets of regional climate modelling},
+  author={Laprise, RRDE and De Elia, R and Caya, D and Biner, S and Lucas-Picher, Ph and Diaconescu, E and Leduc, M and Alexandru, A and Separovic, L},
+  journal={Meteorology and Atmospheric Physics},
+  volume={100},
+  number={1-4},
+  pages={3--22},
+  year={2008},
+  publisher={Springer},
+  DOI={10.1007/s00703-008-0292-9}
+}
+
+@article{christensen2007regional,
+  title={Regional climate projections},
+  author={Christensen, Jens Hesselbjerg and Hewitson, Bruce and Busuioc, Aristita and Chen, Anthony and Gao, Xuejie and Held, R and Jones, Richard and Kolli, Rupa Kumar and Kwon, WK and Laprise, Ren{\'e} and others},
+  journal={Climate Change, 2007: The Physical Science Basis. Contribution of Working group I to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change, University Press, Cambridge, Chapter 11},
+  pages={847--940},
+  year={2007}
+}
+
+@article{bukovsky2009precipitation,
+  title="{Precipitation simulations using WRF as a nested regional climate model}",
+  author={Bukovsky, Melissa S and Karoly, David J},
+  journal={Journal of Applied Meteorology and Climatology},
+  volume={48},
+  number={10},
+  pages={2152--2159},
+  year={2009}
+}
+
+@article{leung2009atmospheric,
+  title="{Atmospheric rivers induced heavy precipitation and flooding in the western US simulated by the WRF regional climate model}",
+  author={Leung, L Ruby and Qian, Yun},
+  journal={Geophysical Research Letters},
+  volume={36},
+  number={3},
+  year={2009},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2008GL036445}
+}
+
+@article{caldwell2009evaluation,
+  title="{Evaluation of a WRF dynamical downscaling simulation over California}",
+  author={Caldwell, Peter and Chin, Hung-Neng S and Bader, David C and Bala, Govindasamy},
+  journal={Climatic Change},
+  volume={95},
+  number={3-4},
+  pages={499--521},
+  year={2009},
+  publisher={Springer}
+}
+
+@article{mearns2012north,
+  title="{The North American regional climate change assessment program: overview of phase I results}",
+  author={Mearns, Linda O and Arritt, Ray and Biner, S{\'e}bastien and Bukovsky, Melissa S and McGinnis, Seth and Sain, Stephan and Caya, Daniel and Correia Jr, James and Flory, Dave and Gutowski, William and others},
+  journal={Bulletin of the American Meteorological Society},
+  volume={93},
+  number={9},
+  pages={1337--1362},
+  year={2012},
+  publisher={American Meteorological Society}
+}
+
+@article{leung2003regional,
+  title={Regional climate research: needs and opportunities},
+  author={Leung, L Ruby and Mearns, Linda O and Giorgi, Filippo and Wilby, Robert L},
+  journal={Bulletin of the American Meteorological Society},
+  volume={84},
+  number={1},
+  pages={89--95},
+  year={2003},
+  DOI={10.1175/BAMS-84-1-89}
+}
+
+@article{ashfaq2016high,
+  title="{High-resolution ensemble projections of near-term regional climate over the continental United States}",
+  author={Ashfaq, Moetasim and Rastogi, Deeksha and Mei, Rui and Kao, Shih-Chieh and Gangrade, Sudershan and Naz, Bibi and Touma, Danielle},
+  journal={Journal of Geophysical Research: Atmospheres},
+  year={2016},
+  publisher={Wiley Online Library},
+  doi={10.1002/2016JD025285}
+}
+
+@article{gibelin2003anthropogenic,
+  title="{Anthropogenic climate change over the Mediterranean region simulated by a global variable resolution model}",
+  author={Gibelin, A-L and D{\'e}qu{\'e}, Michel},
+  journal={Climate Dynamics},
+  volume={20},
+  number={4},
+  pages={327--339},
+  year={2003},
+  publisher={Springer}
+}
+
+@article{zarzycki2014multidecadal,
+  title="{A multidecadal simulation of Atlantic tropical cyclones using a variable-resolution global atmospheric general circulation model}",
+  author={Zarzycki, Colin M and Jablonowski, Christiane},
+  journal={Journal of Advances in Modeling Earth Systems},
+  volume={6},
+  number={3},
+  pages={805--828},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+
+@article{zarzycki2015localizedgrid,
+  title={Assessing the model climatology of a multidecadal variable-resolution global atmospheric general circulation model simulation},
+  author={Zarzycki, Colin M and Jablonowski, Christiane and Thatcher, Diana R and Taylor, Mark A},
+  journal={Journal of Climate},
+  year={2015},
+  NOTE = {in review}
+}
+
+@article{rauscher2013exploring,
+  title="{Exploring a global multiresolution modeling approach using aquaplanet simulations}",
+  author={Rauscher, Sara A and Ringler, Todd D and Skamarock, William C and Mirin, Arthur A},
+  journal={Journal of Climate},
+  volume={26},
+  number={8},
+  pages={2432--2452},
+  year={2013},
+  DOI={10.1175/JCLI-D-12-00154.1}
+}
+
+@article{warner1997tutorial,
+  title={A tutorial on lateral boundary conditions as a basic and potentially serious limitation to regional numerical weather prediction},
+  author={Warner, Thomas T and Peterson, Ralph A and Treadon, Russell E},
+  journal={Bulletin of the American Meteorological Society},
+  volume={78},
+  number={11},
+  pages={2599--2617},
+  year={1997}
+}
+
+@article{mcdonald2003transparent,
+  title={Transparent boundary conditions for the shallow-water equations: testing in a nested environment},
+  author={McDonald, A},
+  journal={Monthly Weather Review},
+  volume={131},
+  number={4},
+  pages={698--705},
+  year={2003},
+  DOI={10.1175/1520-0493(2003)131<0698:TBCFTS>2.0.CO;2}
+}
+
+@article{mesinger2013limited,
+  title="{Limited area NWP and regional climate modeling: a test of the relaxation vs Eta lateral boundary conditions}",
+  author={Mesinger, Fedor and Veljovic, Katarina},
+  journal={Meteorology and Atmospheric Physics},
+  volume={119},
+  number={1-2},
+  pages={1--16},
+  year={2013},
+  publisher={Springer},
+  DOI={10.1007/s00703-012-0217-5}
+}
+
+@article{zwiers1998changes,
+  title="{Changes in the extremes of the climate simulated by CCC GCM2 under CO2 doubling}",
+  author={Zwiers, Francis W and Kharin, Viatcheslav V},
+  journal={Journal of Climate},
+  volume={11},
+  number={9},
+  pages={2200--2222},
+  year={1998}
+}
+
+@article{easterling2000climate,
+  title={Climate extremes: observations, modeling, and impacts},
+  author={Easterling, David R and Meehl, Gerald A and Parmesan, Camille and Changnon, Stanley A and Karl, Thomas R and Mearns, Linda O},
+  journal={science},
+  volume={289},
+  number={5487},
+  pages={2068--2074},
+  year={2000},
+  publisher={American Association for the Advancement of Science},
+  doi={10.1126/science.289.5487.2068}
+}
+
+@article{meehl2004more,
+  title={More intense, more frequent, and longer lasting heat waves in the 21st century},
+  author={Meehl, Gerald A and Tebaldi, Claudia},
+  journal={Science},
+  volume={305},
+  number={5686},
+  pages={994--997},
+  year={2004},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{beniston2004extreme,
+  title={Extreme climatic events and their evolution under changing climatic conditions},
+  author={Beniston, Martin and Stephenson, David B},
+  journal={Global and Planetary Change},
+  volume={44},
+  number={1},
+  pages={1--9},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@article{scoccimarro2013heavy,
+  title="{Heavy precipitation events in a warmer climate: Results from CMIP5 models}",
+  author={Scoccimarro, Enrico and Zampieri, M and Bellucci, Alessio and Navarra, A and others},
+  journal={Journal of Climate},
+  year={2013},
+  publisher={American Meteorological Society},
+  DOI={10.1175/JCLI-D-12-00850.1}
+}
+
+@article{frich2002observed,
+  title={Observed coherent changes in climatic extremes during the second half of the twentieth century},
+  author={Frich, P and Alexander, LV and Della-Marta, P and Gleason, B and Haylock, M and Klein Tank, AM and Peterson, Tom},
+  journal={Climate Research},
+  volume={19},
+  number={3},
+  pages={193--212},
+  year={2002},
+  publisher={INTER-RESEARCH NORDBUNTE 23, D-21385 OLDENDORF LUHE, GERMANY}
+}
+
+@article{munasinghe2012climate,
+  title={Climate change: a new metric to measure changes in the frequency of extreme temperatures using record data},
+  author={Munasinghe, Lalith and Jun, Tackseung and Rind, David H},
+  journal={Climatic change},
+  volume={113},
+  number={3-4},
+  pages={1001--1024},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{klein2003trends,
+  title="{Trends in indices of daily temperature and precipitation extremes in Europe, 1946-99}",
+  author={Klein Tank, AMG and K{\"o}nnen, GP},
+  journal={Journal of Climate},
+  volume={16},
+  number={22},
+  pages={3665--3680},
+  year={2003}
+}
+
+@article{alexander2006global,
+  title={Global observed changes in daily climate extremes of temperature and precipitation},
+  author={Alexander, LV and Zhang, Xuebin and Peterson, TC and Caesar, John and Gleason, B and Klein Tank, AMG and Haylock, M and Collins, Dean and Trewin, Blair and Rahimzadeh, Fatemah and others},
+  journal={Journal of Geophysical Research: Atmospheres (1984--2012)},
+  volume={111},
+  number={D5},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+@article{tebaldi2006going,
+  title={Going to the extremes},
+  author={Tebaldi, Claudia and Hayhoe, Katharinec and Arblaster, Julie M and Meehl, Gerald A},
+  journal={Climatic Change},
+  volume={79},
+  number={3-4},
+  pages={185--211},
+  year={2006},
+  publisher={Springer},
+  DOI={10.1007/s10584-006-9051-4}
+}
+
+@article{wehner2013very,
+  title="{Very extreme seasonal precipitation in the NARCCAP ensemble: model performance and projections}",
+  author={Wehner, Michael F},
+  journal={Climate Dynamics},
+  volume={40},
+  number={1-2},
+  pages={59--80},
+  year={2013},
+  publisher={Springer},
+  DOI={10.1007/s00382-012-1393-1}
+}
+
+@article{photiadou2014modeling,
+  title="{Modeling European hot spells using extreme value analysis}",
+  author={Photiadou, Christiana and Jones, Mari R and Keellings, David and Dewes, Candida F},
+  journal={Climate research},
+  volume={58},
+  number={3},
+  pages={193--207},
+  year={2014},
+  publisher={Inter-Research}
+}
+
+@article{diffenbaugh2005fine,
+  title={Fine-scale processes regulate the response of extreme events to global climate change},
+  author={Diffenbaugh, Noah S and Pal, Jeremy S and Trapp, Robert J and Giorgi, Filippo},
+  journal={Proceedings of the National Academy of Sciences of the United States of America},
+  volume={102},
+  number={44},
+  pages={15774--15778},
+  year={2005},
+  publisher={National Acad Sciences},
+  doi={10.1073/pnas.0506042102}
+}
+
+@article{kharin2000changes,
+  title="{Changes in the extremes in an ensemble of transient climate simulations with a coupled atmosphere-ocean GCM}",
+  author={Kharin, Viatcheslav V and Zwiers, Francis W},
+  journal={Journal of Climate},
+  volume={13},
+  number={21},
+  pages={3760--3788},
+  year={2000}
+}
+
+@article{kharin2005estimating,
+  title={Estimating extremes in transient climate change simulations},
+  author={Kharin, Viatcheslav V and Zwiers, Francis W},
+  journal={Journal of Climate},
+  volume={18},
+  number={8},
+  pages={1156--1173},
+  year={2005}
+}
+
+@book{coles2001introduction,
+  title={An introduction to statistical modeling of extreme values},
+  author={Coles, Stuart and Bawa, Joanna and Trenner, Lesley and Dorazio, Pat},
+  volume={208},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{furrer2010statistical,
+  title={Statistical modeling of hot spells and heat waves},
+  author={Furrer, Eva M and Katz, Richard W and Walter, Marcus D and Furrer, Reinhard},
+  journal={Climate research (Open Access for articles 4 years old and older)},
+  volume={43},
+  number={3},
+  pages={191},
+  year={2010}
+}
+
+@article{wehner2010sources,
+  title={Sources of uncertainty in the extreme value statistics of climate data},
+  author={Wehner, Michael F},
+  journal={Extremes},
+  volume={13},
+  number={2},
+  pages={205--217},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{katz2010statistics,
+  title={Statistics of extremes in climate change},
+  author={Katz, Richard W},
+  journal={Climatic Change},
+  volume={100},
+  number={1},
+  pages={71--76},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{grotjahn2008composite,
+  title="{Composite predictor maps of extraordinary weather events in the Sacramento, California, Region*}",
+  author={Grotjahn, Richard and Faure, Ghislain},
+  journal={Weather and Forecasting},
+  volume={23},
+  number={3},
+  pages={313--335},
+  year={2008}
+}
+
+@article{gershunov2009great,
+  title="{The great 2006 heat wave over California and Nevada: Signal of an increasing trend}",
+  author={Gershunov, Alexander and Cayan, Daniel R and Iacobellis, Sam F},
+  journal={Journal of Climate},
+  volume={22},
+  number={23},
+  pages={6181--6203},
+  year={2009}
+}
+
+@article{grotjahn2011identifying,
+  title="{Identifying extreme hottest days from large scale upper air data: a pilot scheme to find California Central Valley summertime maximum surface temperatures}",
+  author={Grotjahn, Richard},
+  journal={Climate dynamics},
+  volume={37},
+  number={3-4},
+  pages={587--604},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{sillmann2011extreme,
+  title="{Extreme cold winter temperatures in Europe under the influence of North Atlantic atmospheric blocking}",
+  author={Sillmann, Jana and Croci-Maspoli, Mischa and Kallache, Malaak and Katz, Richard W},
+  journal={Journal of Climate},
+  volume={24},
+  number={22},
+  pages={5899--5913},
+  year={2011},
+  doi={10.1175/2010JCLI3249.1}
+}
+
+@article{hayhoe2004emissions,
+  title="{Emissions pathways, climate change, and impacts on California}",
+  author={Hayhoe, Katharine and Cayan, Daniel and Field, Christopher B and Frumhoff, Peter C and Maurer, Edwin P and Miller, Norman L and Moser, Susanne C and Schneider, Stephen H and Cahill, Kimberly Nicholas and Cleland, Elsa E and others},
+  journal={Proceedings of the National Academy of Sciences of the United States of America},
+  volume={101},
+  number={34},
+  pages={12422--12427},
+  year={2004},
+  publisher={National Acad Sciences}
+}
+
+@article{cayan2008overview,
+  title="{Overview of the California climate change scenarios project}",
+  author={Cayan, Daniel R and Luers, Amy L and Franco, Guido and Hanemann, Michael and Croes, Bart and Vine, Edward},
+  journal={Climatic Change},
+  volume={87},
+  number={1},
+  pages={1--6},
+  year={2008},
+  publisher={Springer}
+}
+
+@article{leung2004mid,
+  title="{Mid-century ensemble regional climate change scenarios for the western United States}",
+  author={Leung, L Ruby and Qian, Yun and Bian, Xindi and Washington, Warren M and Han, Jongil and Roads, John O},
+  journal={Climatic Change},
+  volume={62},
+  number={1-3},
+  pages={75--113},
+  year={2004},
+  publisher={Springer}
+}
+
+@article{kanamitsu2007fifty,
+  title="{Fifty-seven-year California Reanalysis Downscaling at 10 km (CaRD10). Part I: System detail and validation with observations}",
+  author={Kanamitsu, Masao and Kanamaru, Hideki},
+  journal={Journal of Climate},
+  volume={20},
+  number={22},
+  pages={5553--5571},
+  year={2007}
+}
+
+@article{pan2011influences,
+  title="{Influences of climate change on California and Nevada regions revealed by a high-resolution dynamical downscaling study}",
+  author={Pan, Lin-Lin and Chen, Shu-Hua and Cayan, Dan and Lin, Mei-Ying and Hart, Quinn and Zhang, Ming-Hua and Liu, Yubao and Wang, Jianzhong},
+  journal={Climate dynamics},
+  volume={37},
+  number={9-10},
+  pages={2005--2020},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{pierce2013probabilistic,
+  title="{Probabilistic estimates of future changes in California temperature and precipitation using statistical and dynamical downscaling}",
+  author={Pierce, David W and Das, Tapash and Cayan, Daniel R and Maurer, Edwin P and Miller, Norman L and Bao, Yan and Kanamitsu, M and Yoshimura, Kei and Snyder, Mark A and Sloan, Lisa C and others},
+  journal={Climate Dynamics},
+  volume={40},
+  number={3-4},
+  pages={839--856},
+  year={2013},
+  publisher={Springer}
+}
+
+@article{arakawa2011toward,
+  title={Toward unification of the multiscale modeling of the atmosphere},
+  author={Arakawa, A and Jung, J-H and Wu, C-M},
+  journal={Atmospheric Chemistry and Physics},
+  volume={11},
+  number={8},
+  pages={3731--3742},
+  year={2011},
+  publisher={Copernicus GmbH}
+}
+
+@article{bogenschutz2013higher,
+  title="{Higher-order turbulence closure and its impact on climate simulations in the Community Atmosphere Model}",
+  author={Bogenschutz, Peter A and Gettelman, Andrew and Morrison, Hugh and Larson, Vincent E and Craig, Cheryl and Schanen, David P},
+  journal={Journal of Climate},
+  volume={26},
+  number={23},
+  pages={9655--9676},
+  year={2013}
+}
+
+@article{wu2014unified,
+  title="{A Unified Representation of Deep Moist Convection in Numerical Modeling of the Atmosphere: Part II}",
+  author={Wu, Chien-Ming and Arakawa, Akio},
+  journal={Journal of the Atmospheric Sciences},
+  number={2014},
+  year={2014}
+}
+
+@article{grell2013scale,
+  title={A scale and aerosol aware stochastic convective parameterization for weather and air quality modeling},
+  author={Grell, Georg A and Freitas, Saulo R},
+  journal={Atmospheric Chemistry and Physics Discussions},
+  volume={13},
+  number={9},
+  pages={23845--23893},
+  year={2013},
+  publisher={Copernicus GmbH}
+}
+
+@article{zhang1995sensitivity,
+  title="{Sensitivity of climate simulations to the parameterization of cumulus convection in the Canadian Climate Centre general circulation model}",
+  author={Zhang, Guang J and McFarlane, Norman A},
+  journal={Atmosphere-Ocean},
+  volume={33},
+  number={3},
+  pages={407--446},
+  year={1995},
+  publisher={Taylor \& Francis}
+}
+
+@article{arakawa2013unified,
+  title="{A unified representation of deep moist convection in numerical modeling of the atmosphere. Part I}",
+  author={Arakawa, Akio and Wu, Chien-Ming},
+  journal={Journal of the Atmospheric Sciences},
+  volume={70},
+  number={7},
+  pages={1977--1992},
+  year={2013}
+}
+
+@article{lo2008assessment,
+  title="{Assessment of three dynamical climate downscaling methods using the Weather Research and Forecasting (WRF) model}",
+  author={Lo, Jeff Chun-Fung and Yang, Zong-Liang and Pielke, Roger A},
+  journal={Journal of Geophysical Research: Atmospheres (1984--2012)},
+  volume={113},
+  number={D9},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@article{dee2011era,
+  title="{The ERA-Interim reanalysis: Configuration and performance of the data assimilation system}",
+  author={Dee, DP and Uppala, SM and Simmons, AJ and Berrisford, P and Poli, P and Kobayashi, S and Andrae, U and Balmaseda, MA and Balsamo, G and Bauer, P and others},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  volume={137},
+  number={656},
+  pages={553--597},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@techreport{skamarock2005coauthors,
+  title="{Coauthors, 2008: A Description of the Advanced Research WRF Version 3. NCAR Technical Note}",
+  author={Skamarock, WC and Klemp, JB and Dudhia, J and Gill, DO and Barker, DM},
+  year={2005},
+  institution={NCAR/TN--475+ STR}
+}
+
+@article{neale2010description,
+  title="{Description of the NCAR community atmosphere model (CAM 5.0)}",
+  author={Neale, Richard B and Chen, Chih-Chieh and Gettelman, Andrew and Lauritzen, Peter H and Park, Sungsu and Williamson, David L and Conley, Andrew J and Garcia, Rolando and Kinnison, Doug and Lamarque, Jean-Francois and others},
+  journal={NCAR Tech. Note NCAR/TN-486+ STR},
+  year={2010},
+  
+}
+
+@article{taylor2010compatible,
+  title={A compatible and conservative spectral element method on unstructured grids},
+  author={Taylor, Mark A and Fournier, Aim{\'e}},
+  journal={Journal of Computational Physics},
+  volume={229},
+  number={17},
+  pages={5879--5895},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{bacmeister2014exploratory,
+  title="{Exploratory high-resolution climate simulations using the Community Atmosphere Model (CAM)}",
+  author={Bacmeister, Julio T and Wehner, Michael F and Neale, Richard B and Gettelman, Andrew and Hannay, Cecile and Lauritzen, Peter H and Caron, Julie M and Truesdale, John E},
+  journal={Journal of Climate},
+  volume={27},
+  number={9},
+  pages={3073--3099},
+  year={2014}
+}
+
+@article{brown2008global,
+  title={Global changes in extreme daily temperature since 1950},
+  author={Brown, SJ and Caesar, J and Ferro, Christopher AT},
+  journal={Journal of Geophysical Research: Atmospheres (1984--2012)},
+  volume={113},
+  number={D5},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@article{cooley2007bayesian,
+  title={Bayesian spatial modeling of extreme precipitation return levels},
+  author={Cooley, Daniel and Nychka, Douglas and Naveau, Philippe},
+  journal={Journal of the American Statistical Association},
+  volume={102},
+  number={479},
+  pages={824--840},
+  year={2007},
+  publisher={Taylor \& Francis}
+}
+
+@article{cooley2010spatial,
+  title={Spatial hierarchical modeling of precipitation extremes from a regional climate model},
+  author={Cooley, Daniel and Sain, Stephan R},
+  journal={Journal of agricultural, biological, and environmental statistics},
+  volume={15},
+  number={3},
+  pages={381--402},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{fruh2010determination,
+  title={Determination of precipitation return values in complex terrain and their evaluation},
+  author={Fr{\"u}h, Barbara and Feldmann, Hendrik and Panitz, Hans-J{\"u}rgen and Sch{\"a}dler, Gerd and Jacob, Daniela and Lorenz, Philip and Keuler, Klaus},
+  journal={Journal of Climate},
+  volume={23},
+  number={9},
+  pages={2257--2274},
+  year={2010}
+}
+
+@article{frei2006future,
+  title="{Future change of precipitation extremes in Europe: Intercomparison of scenarios from regional climate models}",
+  author={Frei, Christoph and Sch{\"o}ll, Regina and Fukutome, Sophie and Schmidli, J{\"u}rg and Vidale, Pier Luigi},
+  journal={Journal of Geophysical Research: Atmospheres (1984--2012)},
+  volume={111},
+  number={D6},
+  year={2006},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2005JD005965}
+}
+
+@article{martins2000generalized,
+  title={Generalized maximum-likelihood generalized extreme-value quantile estimators for hydrologic data},
+  author={Martins, Eduardo S and Stedinger, Jery R},
+  journal={Water Resources Research},
+  volume={36},
+  number={3},
+  pages={737--744},
+  year={2000},
+  publisher={Wiley Online Library}
+}
+
+@article{zhang2011indices,
+  title={Indices for monitoring changes in extremes based on daily temperature and precipitation data},
+  author={Zhang, Xuebin and Alexander, Lisa and Hegerl, Gabriele C and Jones, Philip and Tank, Albert Klein and Peterson, Thomas C and Trewin, Blair and Zwiers, Francis W},
+  journal={Wiley Interdisciplinary Reviews: Climate Change},
+  volume={2},
+  number={6},
+  pages={851--870},
+  year={2011},
+  publisher={Wiley Online Library},
+  DOI={10.1002/wcc.147}
+}
+
+@article{keellings2014investigating,
+  title="{Investigating teleconnection drivers of bivariate heat waves in Florida using extreme value analysis}",
+  author={Keellings, David and Waylen, Peter},
+  journal={Climate Dynamics},
+  pages={1--9},
+  year={2014},
+  publisher={Springer}
+}
+
+@article{abatzoglou2009classification,
+  title="{Classification of regional climate variability in the state of California}",
+  author={Abatzoglou, John T and Redmond, Kelly T and Edwards, Laura M},
+  journal={Journal of Applied Meteorology and Climatology},
+  volume={48},
+  number={8},
+  pages={1527--1541},
+  year={2009}
+}
+
+@article{neale2008impact,
+  title="{The impact of convection on ENSO: From a delayed oscillator to a series of events}",
+  author={Neale, Richard B and Richter, Jadwiga H and Jochum, Markus},
+  journal={Journal of climate},
+  volume={21},
+  number={22},
+  pages={5904--5924},
+  year={2008}
+}
+
+@article{richter2008effects,
+  title="{Effects of convective momentum transport on the atmospheric circulation in the Community Atmosphere Model, version 3}",
+  author={Richter, Jadwiga H and Rasch, Philip J},
+  journal={Journal of Climate},
+  volume={21},
+  number={7},
+  pages={1487--1499},
+  year={2008}
+}
+
+@article{perkins2007evaluation,
+  title="{Evaluation of the AR4 climate models' simulated daily maximum temperature, minimum temperature, and precipitation over Australia using probability density functions}",
+  author={Perkins, SE and Pitman, AJ and Holbrook, NJ and McAneney, J},
+  journal={Journal of climate},
+  volume={20},
+  number={17},
+  pages={4356--4376},
+  year={2007}
+}
+
+@article{perkins2011biases,
+  title="{Biases and model agreement in projections of climate extremes over the tropical Pacific}",
+  author={Perkins, Sarah E},
+  journal={Earth Interactions},
+  volume={15},
+  number={24},
+  pages={1--36},
+  year={2011}
+}
+
+@article{sanchez2004future,
+  title="{Future climate extreme events in the Mediterranean simulated by a regional climate model: a first approach}",
+  author={S{\'a}nchez, E and Gallardo, C and Gaertner, MA and Arribas, A and Castro, M},
+  journal={Global and Planetary Change},
+  volume={44},
+  number={1},
+  pages={163--180},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@article{giorgi2009addressing,
+  title="{Addressing climate information needs at the regional level: the CORDEX framework}",
+  author={Giorgi, Filippo and Jones, Colin and Asrar, Ghassem R and others},
+  journal={World Meteorological Organization (WMO) Bulletin},
+  volume={58},
+  number={3},
+  pages={175},
+  year={2009}
+}
+
+@article{hegerl2004detectability,
+  title={Detectability of anthropogenic changes in annual temperature and precipitation extremes},
+  author={Hegerl, Gabriele C and Zwiers, Francis W and Stott, Peter A and Kharin, Viatcheslav V},
+  journal={Journal of Climate},
+  volume={17},
+  number={19},
+  pages={3683--3700},
+  year={2004},
+  DOI={10.1175/1520-0442(2004)017<3683:DOACIA>2.0.CO;2}
+}
+
+@article{jones2000occurrence,
+  title="{Occurrence of extreme precipitation events in California and relationships with the Madden-Julian oscillation}",
+  author={Jones, Charles},
+  journal={Journal of Climate},
+  volume={13},
+  number={20},
+  pages={3576--3587},
+  year={2000}
+}
+
+@article{wehner2010effect,
+  title="{The effect of horizontal resolution on simulation of very extreme US precipitation events in a global atmosphere model}",
+  author={Wehner, Michael F and Smith, Richard L and Bala, G and Duffy, Phillip},
+  journal={Climate Dynamics},
+  volume={34},
+  number={2-3},
+  pages={241--247},
+  year={2010},
+  publisher={Springer},
+  DOI={10.1007/s00382-009-0656-y}
+}
+
+@article{singh2013precipitation,
+  title="{Precipitation extremes over the continental United States in a transient, high-resolution, ensemble climate model experiment}",
+  author={Singh, Deepti and Tsiang, Michael and Rajaratnam, Bala and Diffenbaugh, Noah S},
+  journal={Journal of Geophysical Research: Atmospheres},
+  volume={118},
+  number={13},
+  pages={7063--7086},
+  year={2013},
+  publisher={Wiley Online Library},
+  DOI={10.1002/jgrd.50543}
+}
+
+@article{zhang2010influence,
+  title="{The influence of large-scale climate variability on winter maximum daily precipitation over North America}",
+  author={Zhang, Xuebin and Wang, Jiafeng and Zwiers, Francis W and Groisman, Pavel Ya},
+  journal={Journal of Climate},
+  volume={23},
+  number={11},
+  pages={2902--2915},
+  year={2010},
+  
+}
+
+@article{mastrandrea2011current,
+  title="{Current and future impacts of extreme events in California}",
+  author={Mastrandrea, Michael D and Tebaldi, Claudia and Snyder, Carolyn W and Schneider, Stephen H},
+  journal={Climatic Change},
+  volume={109},
+  number={1},
+  pages={43--70},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{hurrell2008new,
+  title="{A new sea surface temperature and sea ice boundary dataset for the Community Atmosphere Model}",
+  author={Hurrell, James W and Hack, James J and Shea, Dennis and Caron, Julie M and Rosinski, James},
+  journal={Journal of Climate},
+  volume={21},
+  number={19},
+  pages={5145--5153},
+  year={2008}
+}
+
+@article{riahi2011rcp,
+  title="{RCP 8.5 -- A scenario of comparatively high greenhouse gas emissions}",
+  author={Riahi, Keywan and Rao, Shilpa and Krey, Volker and Cho, Cheolhung and Chirkov, Vadim and Fischer, Guenther and Kindermann, Georg and Nakicenovic, Nebojsa and Rafaj, Peter},
+  journal={Climatic Change},
+  volume={109},
+  number={1-2},
+  pages={33--57},
+  year={2011},
+  publisher={Springer},
+  DOI={10.1007/s10584-011-0149-y}
+}
+
+@article{thomson2011rcp4,
+  title="{RCP4. 5: a pathway for stabilization of radiative forcing by 2100}",
+  author={Thomson, Allison M and Calvin, Katherine V and Smith, Steven J and Kyle, G Page and Volke, April and Patel, Pralit and Delgado-Arias, Sabrina and Bond-Lamberty, Ben and Wise, Marshall A and Clarke, Leon E and others},
+  journal={Climatic Change},
+  volume={109},
+  number={1-2},
+  pages={77--94},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{rummukainen2010state,
+  title="{State-of-the-art with Regional Climate Models}",
+  author={Rummukainen, Markku},
+  journal={Wiley Interdisciplinary Reviews: Climate Change},
+  volume={1},
+  number={1},
+  pages={82--96},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{laprise2008regional,
+  title={Regional climate modelling},
+  author={Laprise, Ren{\'e}},
+  journal={Journal of Computational Physics},
+  volume={227},
+  number={7},
+  pages={3641--3666},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{staniforth1978variable,
+  title={A variable-resolution finite-element technique for regional forecasting with the primitive equations},
+  author={Staniforth, Andrew N and Mitchell, Herschel L},
+  journal={Monthly Weather Review},
+  volume={106},
+  number={4},
+  pages={439--447},
+  year={1978},
+  DOI={10.1175/1520-0493(1978)106<0439:AVRFET>2.0.CO;2}
+}
+
+@article{fox2000uniform,
+  title="{A uniform-and variable-resolution stretched-grid GCM dynamical core with realistic orography}",
+  author={Fox-Rabinovitz, Michael S and Stenchikov, Georgiy L and Suarez, Max J and Takacs, Lawrence L and Govindaraju, Ravi C},
+  journal={Monthly Weather Review},
+  volume={128},
+  number={6},
+  pages={1883--1898},
+  year={2000}
+}
+
+@article{berbery2003multiscale,
+  title="{Multiscale diagnosis of the North American monsoon system using a variable-resolution GCM}",
+  author={Berbery, Ernesto Hugo and Fox-Rabinovitz, Michael S},
+  journal={Journal of Climate},
+  volume={16},
+  number={12},
+  pages={1929--1947},
+  year={2003}
+}
+
+@article{fox1997finite,
+  title="{A finite-difference GCM dynamical core with a variable-resolution stretched grid}",
+  author={Fox-Rabinovitz, Michael S and Stenchikov, Georgiy L and Suarez, Max J and Takacs, Lawrence L},
+  journal={Monthly Weather Review},
+  volume={125},
+  number={11},
+  pages={2943--2968},
+  year={1997},
+  DOI={10.1175/1520-0493(1997)125<2943:AFDGDC>2.0.CO;2}
+}
+
+@article{fox2001variable,
+  title="{A variable-resolution stretched-grid general circulation model: Regional climate simulation}",
+  author={Fox-Rabinovitz, Michael S and Takacs, Lawrence L and Govindaraju, Ravi C and Suarez, Max J},
+  journal={Monthly Weather Review},
+  volume={129},
+  number={3},
+  pages={453--469},
+  year={2001}
+}
+
+@article{fox2006variable,
+  title="{Variable resolution general circulation models: Stretched-grid model intercomparison project (SGMIP)}",
+  author={Fox-Rabinovitz, Michael and C{\^o}t{\'e}, Jean and Dugas, Bernard and D{\'e}qu{\'e}, Michel and McGregor, John L},
+  journal={Journal of Geophysical Research: Atmospheres (1984--2012)},
+  volume={111},
+  number={D16},
+  year={2006},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2005JD006520}
+}
+
+@article{duliere2011extreme,
+  title="{Extreme precipitation and temperature over the US Pacific Northwest: A comparison between observations, reanalysis data, and regional models}",
+  author={Duli{\`e}re, Val{\'e}rie and Zhang, Yongxin and Salath{\'e} Jr, Eric P},
+  journal={Journal of Climate},
+  volume={24},
+  number={7},
+  pages={1950--1964},
+  year={2011},
+  DOI={10.1175/2010JCLI3224.1}
+}
+
+@article{jaeger2011impact,
+  title="{Impact of soil moisture--atmosphere coupling on European climate extremes and trends in a regional climate model}",
+  author={Jaeger, EB and Seneviratne, SI},
+  journal={Climate Dynamics},
+  volume={36},
+  number={9-10},
+  pages={1919--1939},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{diffenbaugh2010intensification,
+  title="{Intensification of hot extremes in the United States}",
+  author={Diffenbaugh, Noah S and Ashfaq, Moetasim},
+  journal={Geophysical Research Letters},
+  volume={37},
+  number={15},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{duffy2006simulations,
+  title="{Simulations of present and future climates in the western United States with four nested regional climate models}",
+  author={Duffy, PB and Arritt, RW and Coquard, J and Gutowski, William and Han, J and Iorio, J and Kim, Jongil and Leung, L-R and Roads, J and Zeledon, E},
+  journal={Journal of Climate},
+  volume={19},
+  number={6},
+  pages={873--895},
+  year={2006},
+  DOI={10.1175/JCLI3669.1}
+}
+
+@article{medvigy2013simulated,
+  title="{Simulated Changes in Northwest US Climate in Response to Amazon Deforestation*}",
+  author={Medvigy, David and Walko, Robert L and Otte, Martin J and Avissar, Roni},
+  journal={Journal of Climate},
+  volume={26},
+  number={22},
+  pages={9115--9136},
+  year={2013}
+}
+
+@article{rauscher2010resolution,
+  title="{Resolution effects on regional climate model simulations of seasonal precipitation over Europe}",
+  author={Rauscher, Sara A and Coppola, Erika and Piani, Claudio and Giorgi, Filippo},
+  journal={Climate dynamics},
+  volume={35},
+  number={4},
+  pages={685--711},
+  year={2010},
+  publisher={Springer},
+  DOI={10.1007/s00382-009-0607-7}
+}
+
+@article{bell2004regional,
+  title={Regional changes in extreme climatic events: a future climate scenario},
+  author={Bell, Jason L and Sloan, Lisa C and Snyder, Mark A},
+  journal={Journal of Climate},
+  volume={17},
+  number={1},
+  pages={81--87},
+  year={2004},
+  doi={10.1175/1520-0442(2004)017<0081:RCIECE>2.0.CO;2}
+}
+
+@article{kharin2007changes,
+  title="{Changes in temperature and precipitation extremes in the IPCC ensemble of global coupled model simulations}",
+  author={Kharin, Viatcheslav V and Zwiers, Francis W and Zhang, Xuebin and Hegerl, Gabriele C},
+  journal={Journal of Climate},
+  volume={20},
+  number={8},
+  pages={1419--1444},
+  year={2007},
+  DOI={10.1175/JCLI4066.1}
+}
+
+@article{salathe2008high,
+  title="{A high-resolution climate model for the US Pacific Northwest: Mesoscale feedbacks and local responses to climate change}",
+  author={Salath{\'e} Jr, Eric P and Steed, Richard and Mass, Clifford F and Zahn, Patrick H},
+  journal={Journal of Climate},
+  volume={21},
+  number={21},
+  pages={5708--5726},
+  year={2008},
+  DOI={10.1175/2008JCLI2090.1}
+}
+
+@article{gent2010improvements,
+  title="{Improvements in a half degree atmosphere/land version of the CCSM}",
+  author={Gent, Peter R and Yeager, Stephen G and Neale, Richard B and Levis, Samuel and Bailey, David A},
+  journal={Climate Dynamics},
+  volume={34},
+  number={6},
+  pages={819--833},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{leung2003hydroclimate,
+  title="{Hydroclimate of the western United States based on observations and regional climate simulation of 1981-2000. Part I: Seasonal statistics}",
+  author={Leung, L Ruby and Qian, Yun and Bian, Xindi},
+  journal={Journal of Climate},
+  volume={16},
+  number={12},
+  pages={1892--1911},
+  year={2003},
+  DOI={10.1175/1520-0442(2003)016<1892:HOTWUS>2.0.CO;2}
+}
+
+@article{ferro2003inference,
+  title={Inference for clusters of extreme values},
+  author={Ferro, Christopher AT and Segers, Johan},
+  journal={Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  volume={65},
+  number={2},
+  pages={545--556},
+  year={2003},
+  publisher={Wiley Online Library}
+}
+
+@article{deser2012uncertainty,
+  title={Uncertainty in climate change projections: the role of internal variability},
+  author={Deser, Clara and Phillips, Adam and Bourdette, Vincent and Teng, Haiyan},
+  journal={Climate Dynamics},
+  volume={38},
+  number={3-4},
+  pages={527--546},
+  year={2012},
+  publisher={Springer},
+  doi={10.1007/s00382-010-0977-x}
+}
+
+@article{stauffer1990use,
+  title="{Use of four-dimensional data assimilation in a limited-area mesoscale model. Part I: Experiments with synoptic-scale data}",
+  author={Stauffer, David R and Seaman, Nelson L},
+  journal={Monthly Weather Review},
+  volume={118},
+  number={6},
+  pages={1250--1277},
+  year={1990}
+}
+
+@article{hurrell2013community,
+  title="{The community earth system model: A framework for collaborative research}",
+  author={Hurrell, James W and Holland, Marika M and Gent, Peter R and Ghan, S and Kay, Jennifer E and Kushner, PJ and Lamarque, J-F and Large, William G and Lawrence, D and Lindsay, Keith and others},
+  journal={Bulletin of the American Meteorological Society},
+  volume={94},
+  number={9},
+  pages={1339--1360},
+  year={2013},
+  publisher={American Meteorological Society},
+  DOI={10.1175/BAMS-D-12-00121.1}
+}
+
+@article{maurer2002long,
+  title="{A long-term hydrologically based dataset of land surface fluxes and states for the conterminous United States}",
+  author={Maurer, EP and Wood, AW and Adam, JC and Lettenmaier, DP and Nijssen, B},
+  journal={Journal of Climate},
+  volume={15},
+  number={22},
+  pages={3237--3251},
+  year={2002},
+  DOI={10.1175/1520-0442(2002)015<3237:ALTHBD>2.0.CO;2}
+}
+
+@article{hong2006wrf,
+  title="{The WRF single-moment 6-class microphysics scheme (WSM6)}",
+  author={Hong, Song-You and Lim, Jeong-Ock Jade},
+  journal={Asia-Pacific Journal of Atmospheric Sciences},
+  volume={42},
+  number={2},
+  pages={129--151},
+  year={2006}
+}
+
+@article{kain2004kain,
+  title="{The Kain-Fritsch convective parameterization: an update}",
+  author={Kain, John S},
+  journal={Journal of Applied Meteorology},
+  volume={43},
+  number={1},
+  pages={170--181},
+  year={2004}
+}
+
+@techreport{collins2004description,
+  title="{Description of the NCAR community atmosphere model (CAM 3.0)}",
+  author={Collins, William D and Rasch, Philip J and Boville, Byron A and Hack, James J and McCaa, James R and Williamson, David L and Kiehl, Jeffrey T and Briegleb, Bruce and Bitz, Cecilia and Lin, SJ and others},
+  year={2004},
+  institution={Tech. Rep. NCAR/TN-464+ STR}
+}
+
+@article{chen2001coupling,
+  title="{Coupling an advanced land surface-hydrology model with the Penn State-NCAR MM5 modeling system. Part I: Model implementation and sensitivity}",
+  author={Chen, Fei and Dudhia, Jimy},
+  journal={Monthly Weather Review},
+  volume={129},
+  number={4},
+  pages={569--585},
+  year={2001}
+}
+
+@article{hong2006new,
+  title={A new vertical diffusion package with an explicit treatment of entrainment processes},
+  author={Hong, Song-You and Noh, Yign and Dudhia, Jimy},
+  journal={Monthly Weather Review},
+  volume={134},
+  number={9},
+  pages={2318--2341},
+  year={2006}
+}
+
+@article{jankov2005impact,
+  title="{The impact of different WRF model physical parameterizations and their interactions on warm season MCS rainfall}",
+  author={Jankov, Isidora and Gallus Jr, William A and Segal, Moti and Shaw, Brent and Koch, Steven E},
+  journal={Weather and forecasting},
+  volume={20},
+  number={6},
+  pages={1048--1060},
+  year={2005}
+}
+
+@article{gallus2006comparison,
+  title="{Comparison of impacts of WRF dynamic core, physics package, and initial conditions on warm season rainfall forecasts}",
+  author={Gallus Jr, William A and Bresch, James F},
+  journal={Monthly weather review},
+  volume={134},
+  number={9},
+  pages={2632--2641},
+  year={2006}
+}
+
+@misc{ullrich2014squadgen,
+  title = "{SQuadGen: Spherical Quadrilateral Grid Generator}",
+  author = {Ullrich, P.~A.},
+  year = {2014},
+  howpublished = {\url{http://climate.ucdavis.edu/squadgen.php}},
+  note = {Accessed: 2015-02-11}
+}
+
+@article{ullrich2015arbitrary,
+author = {Paul A. Ullrich and Mark A. Taylor},
+title = "{Arbitrary-order conservative and consistent remapping and a theory of linear maps: Part I}",
+journal = "{Monthly Weather Review}",
+volume = {143},
+number = {6},
+pages = {2419-2440},
+year = {2015},
+doi = {10.1175/MWR-D-14-00343.1}
+}
+
+@article{ullrich2016arbitrary,
+Author = {Ullrich, Paul A and Devendran, Dharshi and Johansen, Hans},
+Doi = {10.1175/MWR-D-15-0301.1},
+Journal = {Monthly Weather Review},
+Month = {1},
+Title = {Arbitrary-order conservative and consistent remapping and a theory of linear maps, Part 2},
+Volume = {144},
+Number = {4},
+Pages = {1529--1549},
+Year = {2016}}
+
+@article{fowler2007linking,
+  title={Linking climate change modelling to impacts studies: recent advances in downscaling techniques for hydrological modelling},
+  author={Fowler, HJ and Blenkinsop, S and Tebaldi, C},
+  journal={International Journal of Climatology},
+  volume={27},
+  number={12},
+  pages={1547--1578},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@article{wehner2014resolution,
+  title="{Resolution dependence of future tropical cyclone projections of CAM5.1 in the US CLIVAR Hurricane Working Group idealized configurations}",
+  author={Michael Wehner and Prabhat and Kevin Reed and Daithi Stone and William D. Collins and Julio Bacmeister and Andrew Gettleman},
+  year={2014},
+  journal={Journal of Climate},
+  doi={10.1175/JCLI-D-14-00311.1},
+  note={In press}
+}
+
+@article{wehner2014effect,
+  title="{The effect of horizontal resolution on simulation quality in the Community Atmospheric Model, CAM5.1}",
+  author={Michael F. Wehner and Kevin Reed and Fuyu Li and Prabhat and Julio Bacmeister and Cheng-Ta Chen and Chris Paciorek and Peter Gleckler and Ken Sperber and William D. Collins and Andrew Gettelman and Christiane Jablonowski},
+  year={2014},
+  journal={Journal of Advances in Modeling Earth Systems},
+  doi={10.1002/2013MS000276}
+}
+
+@article{mesinger2006north,
+  title="{North American regional reanalysis}",
+  author={Mesinger, Fedor and DiMego, Geoff and Kalnay, Eugenia and Mitchell, Kenneth and Shafran, Perry C and Ebisuzaki, Wesley and Jovic, Du{\v{s}}an and Woollen, Jack and Rogers, Eric and Berbery, Ernesto H and others},
+  journal={Bulletin of the American Meteorological Society},
+  volume={87},
+  pages={343--360},
+  year={2006},
+  
+}
+
+@article{bukovsky2007brief,
+	Author = {Bukovsky, Melissa S and Karoly, David J},
+	Journal = {Journal of Hydrometeorology},
+	Number = {4},
+	Pages = {837--846},
+	Title = "{A brief evaluation of precipitation from the North American Regional Reanalysis}",
+	Volume = {8},
+	Year = {2007}
+}
+
+@article{thornton1997generating,
+	Author = {Thornton, Peter E and Running, Steven W and White, Michael A},
+	Journal = {Journal of Hydrology},
+	Number = {3},
+	Pages = {214--251},
+	Publisher = {Elsevier},
+	Title = {Generating surfaces of daily meteorological variables over large regions of complex terrain},
+	Volume = {190},
+	Year = {1997}}
+
+@article{thornton2000simultaneous,
+	Author = {Thornton, Peter E and Hasenauer, Hubert and White, Michael A},
+	Journal = {Agricultural and Forest Meteorology},
+	Number = {4},
+	Pages = {255--271},
+	Publisher = {Elsevier},
+	Title = "{Simultaneous estimation of daily solar radiation and humidity from observed temperature and precipitation: an application over complex terrain in Austria}",
+	Volume = {104},
+	Year = {2000}}
+
+@article{thornton1999improved,
+	Author = {Thornton, Peter E and Running, Steven W},
+	Journal = {Agricultural and Forest Meteorology},
+	Number = {4},
+	Pages = {211--228},
+	Publisher = {Elsevier},
+	Title = {An improved algorithm for estimating incident daily solar radiation from measurements of temperature, humidity, and precipitation},
+	Volume = {93},
+	Year = {1999}}
+
+@article{daly2008physiographically,
+	Author = {Daly, Christopher and Halbleib, Michael and Smith, Joseph I and Gibson, Wayne P and Doggett, Matthew K and Taylor, George H and Curtis, Jan and Pasteris, Phillip P},
+	Journal = {International Journal of Climatology},
+	Number = {15},
+	Pages = {2031--2064},
+	Publisher = {Wiley Online Library},
+	Title = "{Physiographically sensitive mapping of climatological temperature and precipitation across the conterminous United States}",
+	Volume = {28},
+	Year = {2008}}
+	
+@article{zarzycki2015effects,
+  title="{Effects of localized grid refinement on the general circulation and climatology in the Community Atmosphere Model}",
+  author={Zarzycki, Colin M and Jablonowski, Christiane and Thatcher, Diana R and Taylor, Mark A},
+  journal={Journal of Climate},
+  number={2015},
+  year={2015},
+  DOI={10.1175/JCLI-D-14-00599.1}
+}
+
+@article{hamlet2005production,
+  title="{Production of temporally consistent gridded precipitation and temperature fields for the continental United States}",
+  author={Hamlet, Alan F and Lettenmaier, Dennis P},
+  journal={Journal of Hydrometeorology},
+  volume={6},
+  number={3},
+  pages={330--336},
+  year={2005},
+  DOI={10.1175/JHM420.1}
+}
+
+@article{caldwell2010california,
+  title={California wintertime precipitation bias in regional and global climate models},
+  author={Caldwell, Peter},
+  journal={Journal of Applied Meteorology and Climatology},
+  volume={49},
+  number={10},
+  pages={2147--2158},
+  year={2010},
+  doi={10.1175/2010JAMC2388.1}
+}
+
+@article{chin2010preliminary,
+  title="{Preliminary study of California wintertime model wet bias}",
+  author={Chin, Hung-Neng S and Caldwell, Peter M and Bader, David C},
+  journal={Monthly Weather Review},
+  volume={138},
+  number={9},
+  pages={3556--3571},
+  year={2010}
+}
+
+@article{beniston2007future,
+  title={Future extreme events in European climate: an exploration of regional climate model projections},
+  author={Beniston, Martin and Stephenson, David B and Christensen, Ole B and Ferro, Christopher AT and Frei, Christoph and Goyette, St{\'e}phane and Halsnaes, Kirsten and Holt, Tom and Jylh{\"a}, Kirsti and Koffi, Brigitte and others},
+  journal={Climatic Change},
+  volume={81},
+  number={1},
+  pages={71--95},
+  year={2007},
+  publisher={Springer}
+}
+
+@article{kharin2013changes,
+  title={Changes in temperature and precipitation extremes in the CMIP5 ensemble},
+  author={Kharin, Viatcheslav V and Zwiers, FW and Zhang, X and Wehner, M},
+  journal={Climatic Change},
+  volume={119},
+  number={2},
+  pages={345--357},
+  year={2013},
+  publisher={Springer}
+}
+
+@article{rhoades2015characterizing,
+  title="{Characterizing Sierra Nevada snowpack using variable-resolution CESM}",
+  author={Rhoades, Alan M and Huang, Xingying and Ullrich, Paul A and Zarzycki, Colin M},
+  journal={Journal of Applied Meteorology and Climatology},
+  number={2015},
+  year={2015},
+  DOI={10.1175/JAMC-D-15-0156.1}
+}
+
+@article{huang2016evaluation,
+  title="{An evaluation of the variable resolution-CESM for modeling California's climate}",
+  author={Huang, Xingying and Rhoades, Alan M and Ullrich, Paul A and Zarzycki, Colin M},
+  journal={Journal of Advances in Modeling Earth Systems},
+  year={2016},
+  publisher={Wiley Online Library},
+  DOI={10.1002/2015MS000559}
+}
+
+@article{deser2012communication,
+  title="{Communication of the role of natural variability in future North American climate}",
+  author={Deser, Clara and Knutti, Reto and Solomon, Susan and Phillips, Adam S},
+  journal={Nature Climate Change},
+  volume={2},
+  number={11},
+  pages={775--779},
+  year={2012},
+  publisher={Nature Publishing Group},
+  doi={10.1038/nclimate1562}
+}
+
+@article{ropelewski1986north,
+  title={North American precipitation and temperature patterns associated with the El Ni{\~n}o/Southern Oscillation (ENSO)},
+  author={Ropelewski, Chester F and Halpert, Michael S},
+  journal={Monthly Weather Review},
+  volume={114},
+  number={12},
+  pages={2352--2362},
+  year={1986}
+}
+
+@article{mearns1995analysis,
+  title={Analysis of daily variability of precipitation in a nested regional climate model: comparison with observations and doubled CO 2 results},
+  author={Mearns, LO and Giorgi, F and McDaniel, L and Shields, C},
+  journal={Global and Planetary Change},
+  volume={10},
+  number={1},
+  pages={55--78},
+  year={1995},
+  publisher={Elsevier}
+}
+
+
+@article{merryfield2006changes,
+  title={Changes to ENSO under CO2 doubling in a multimodel ensemble},
+  author={Merryfield, William J},
+  journal={Journal of Climate},
+  volume={19},
+  number={16},
+  pages={4009--4027},
+  year={2006}
+}
+
+@article{diffenbaugh2015anthropogenic,
+  title={Anthropogenic warming has increased drought risk in California},
+  author={Diffenbaugh, Noah S and Swain, Daniel L and Touma, Danielle},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={112},
+  number={13},
+  pages={3931--3936},
+  year={2015},
+  publisher={National Acad Sciences}
+}
+
+@article{pierce2002role,
+  title="{The role of sea surface temperatures in interactions between ENSO and the North Pacific Oscillation}",
+  author={Pierce, David W},
+  journal={Journal of Climate},
+  volume={15},
+  number={11},
+  pages={1295--1308},
+  year={2002},
+  DOI={10.1175/1520-0442(2002)015<1295:TROSST>2.0.CO;2}
+}
+
+@article{schliep2010comparison,
+  title={A comparison study of extreme precipitation from six different regional climate models via spatial hierarchical modeling},
+  author={Schliep, Erin M and Cooley, Daniel and Sain, Stephan R and Hoeting, Jennifer A},
+  journal={Extremes},
+  volume={13},
+  number={2},
+  pages={219--239},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{kim2005projection,
+  title="{A projection of the effects of the climate change induced by increased CO$_2$ on extreme hydrologic events in the western US}",
+  author={Kim, Jinwon},
+  journal={Climatic Change},
+  volume={68},
+  number={1-2},
+  pages={153--168},
+  year={2005},
+  publisher={Springer},
+  DOI={10.1007/s10584-005-4787-9}
+}
+
+@article{allan2008atmospheric,
+  title={Atmospheric warming and the amplification of precipitation extremes},
+  author={Allan, Richard P and Soden, Brian J},
+  journal={Science},
+  volume={321},
+  number={5895},
+  pages={1481--1484},
+  year={2008},
+  publisher={American Association for the Advancement of Science},
+  doi={10.1126/science.1160787}
+}
+
+@article{hamlet2007effects,
+  title="{Effects of 20th century warming and climate variability on flood risk in the western US}",
+  author={Hamlet, Alan F and Lettenmaier, Dennis P},
+  journal={Water Resources Research},
+  volume={43},
+  number={6},
+  year={2007},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2006WR005099}
+}
+
+@article{mass2011extreme,
+  title={Extreme precipitation over the west coast of North America: Is there a trend?},
+  author={Mass, Clifford and Skalenakis, Adam and Warner, Michael},
+  journal={Journal of Hydrometeorology},
+  volume={12},
+  number={2},
+  pages={310--318},
+  year={2011}
+}
+
+@article{min2011human,
+  title={Human contribution to more-intense precipitation extremes},
+  author={Min, Seung-Ki and Zhang, Xuebin and Zwiers, Francis W and Hegerl, Gabriele C},
+  journal={Nature},
+  volume={470},
+  number={7334},
+  pages={378--381},
+  year={2011},
+  publisher={Nature Publishing Group},
+  doi={10.1038/nature09763}
+}
+
+
+@article{sillmann2008indices,
+  title={Indices for extreme events in projections of anthropogenic climate change},
+  author={Sillmann, J and Roeckner, E},
+  journal={Climatic Change},
+  volume={86},
+  number={1-2},
+  pages={83--104},
+  year={2008},
+  publisher={Springer}
+}
+
+@article{o2009physical,
+  title={The physical basis for increases in precipitation extremes in simulations of 21st-century climate change},
+  author={O'Gorman, Paul A and Schneider, Tapio},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={106},
+  number={35},
+  pages={14773--14777},
+  year={2009},
+  publisher={National Acad Sciences},
+  doi={10.1073/pnas.0907610106}
+}
+
+@article{joshi2008mechanisms,
+  title={Mechanisms for the land/sea warming contrast exhibited by simulations of climate change},
+  author={Joshi, Manoj M and Gregory, Jonathan M and Webb, Mark J and Sexton, David MH and Johns, Tim C},
+  journal={Climate Dynamics},
+  volume={30},
+  number={5},
+  pages={455--465},
+  year={2008},
+  publisher={Springer},
+  DOI={10.1007/s00382-007-0306-1}
+}
+
+@article{simmons2010low,
+  title={Low-frequency variations in surface atmospheric humidity, temperature, and precipitation: Inferences from reanalyses and monthly gridded observational data sets},
+  author={Simmons, AJ and Willett, KM and Jones, PD and Thorne, PW and Dee, DP},
+  journal={Journal of Geophysical Research: Atmospheres},
+  volume={115},
+  number={D1},
+  year={2010},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2009JD012442}
+}
+
+@article{rowell2006causes,
+  title="{Causes and uncertainty of future summer drying over Europe}",
+  author={Rowell, David P and Jones, Richard G},
+  journal={Climate Dynamics},
+  volume={27},
+  number={2-3},
+  pages={281--299},
+  year={2006},
+  publisher={Springer},
+  DOI={10.1007/s00382-006-0125-9}
+}
+
+@article{sillmann2013climate,
+  title="{Climate extremes indices in the CMIP5 multimodel ensemble: Part 2. Future climate projections}",
+  author={Sillmann, J and Kharin, VV and Zwiers, FW and Zhang, X and Bronaugh, D},
+  journal={Journal of Geophysical Research: Atmospheres},
+  volume={118},
+  number={6},
+  pages={2473--2493},
+  year={2013},
+  publisher={Wiley Online Library},
+  DOI={10.1002/jgrd.50188}
+}
+
+@article{cayan2010future,
+  title="{Future dryness in the southwest US and the hydrology of the early 21st century drought}",
+  author={Cayan, Daniel R and Das, Tapash and Pierce, David W and Barnett, Tim P and Tyree, Mary and Gershunov, Alexander},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={107},
+  number={50},
+  pages={21271--21276},
+  year={2010},
+  publisher={National Acad Sciences},
+  doi={10.1073/pnas.0912391107}
+}
+
+@article{chen2008verification,
+  title={On the verification and comparison of extreme rainfall indices from climate models},
+  author={Chen, Cheng-Ta and Knutson, Thomas},
+  journal={Journal of Climate},
+  volume={21},
+  number={7},
+  pages={1605--1621},
+  year={2008}
+}
+
+@article{sugi2004mechanism,
+  title="{A mechanism of tropical precipitation change due to CO$_2$ increase}",
+  author={Sugi, Masato and Yoshimura, Jun},
+  journal={Journal of Climate},
+  volume={17},
+  number={1},
+  pages={238--243},
+  year={2004},
+  DOI={10.1175/1520-0442(2004)017<0238:AMOTPC>2.0.CO;2}
+}
+
+@article{allen2002constraints,
+  title={Constraints on future changes in climate and the hydrologic cycle},
+  author={Allen, Myles R and Ingram, William J},
+  journal={Nature},
+  volume={419},
+  number={6903},
+  pages={224--232},
+  year={2002},
+  publisher={Nature Publishing Group},
+  doi={10.1038/nature01092}
+}
+
+@article{lavers2013nexus,
+  title={The nexus between atmospheric rivers and extreme precipitation across Europe},
+  author={Lavers, David A and Villarini, Gabriele},
+  journal={Geophysical Research Letters},
+  volume={40},
+  number={12},
+  pages={3259--3264},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+@article{fedorov2000nino,
+  title="{Is El Ni{\~n}o changing?}",
+  author={Fedorov, Alexey V and Philander, S George},
+  journal={Science},
+  volume={288},
+  number={5473},
+  pages={1997--2002},
+  year={2000},
+  publisher={American Association for the Advancement of Science},
+  DOI={10.1126/science.288.5473.1997}
+}
+
+@article{trenberth2003changing,
+  title={The changing character of precipitation},
+  author={Trenberth, Kevin E and Dai, Aiguo and Rasmussen, Roy M and Parsons, David B},
+  journal={Bulletin of the American Meteorological Society},
+  volume={84},
+  number={9},
+  pages={1205--1217},
+  year={2003},
+  DOI={10.1175/BAMS-84-9-1205}
+}
+
+@article{ralph2004satellite,
+  title="{Satellite and CALJET aircraft observations of atmospheric rivers over the eastern North Pacific Ocean during the winter of 1997/98}",
+  author={Ralph, F Martin and Neiman, Paul J and Wick, Gary A},
+  journal={Monthly Weather Review},
+  volume={132},
+  number={7},
+  pages={1721--1745},
+  year={2004},
+  DOI={10.1175/1520-0493(2004)132<1721:SACAOO>2.0.CO;2}
+}
+
+@article{meehl2006future,
+  title="{Future changes of El Ni{\~n}o in two global coupled climate models}",
+  author={Meehl, Gerald A and Teng, Haiyan and Branstator, Grant},
+  journal={Climate Dynamics},
+  volume={26},
+  number={6},
+  pages={549--566},
+  year={2006},
+  publisher={Springer},
+  DOI={10.1007/s00382-005-0098-0}
+}
+
+@article{meehl2007current,
+  title={Current and future US weather extremes and El Ni{\~n}o},
+  author={Meehl, Gerald A and Tebaldi, Claudia and Teng, Haiyan and Peterson, Thomas C},
+  journal={Geophysical Research Letters},
+  volume={34},
+  number={20},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@article{neiman2008meteorological,
+  title="{Meteorological characteristics and overland precipitation impacts of atmospheric rivers affecting the West Coast of North America based on eight years of SSM/I satellite observations}",
+  author={Neiman, Paul J and Ralph, F Martin and Wick, Gary A and Lundquist, Jessica D and Dettinger, Michael D},
+  journal={Journal of Hydrometeorology},
+  volume={9},
+  number={1},
+  pages={22--47},
+  year={2008},
+  DOI={10.1175/2007JHM855.1}
+}
+
+@article{guilyardi2009understanding,
+  title="{Understanding El Ni{\~n}o in ocean-atmosphere general circulation models}",
+  author={Guilyardi, Eric and Wittenberg, Andrew and Fedorov, Alexey and Collins, Mat and Wang, Chunzai and Capotondi, Antonietta and Van Oldenborgh, Geert Jan and Stockdale, Tim},
+  journal={Bulletin of the American Meteorological Society},
+  volume={90},
+  number={3},
+  pages={325},
+  year={2009},
+  publisher={American Meteorological Society},
+  DOI={10.1175/2008BAMS2387.1}
+}
+
+@article{kao2009contrasting,
+  title="{Contrasting eastern-Pacific and central-Pacific types of ENSO}",
+  author={Kao, Hsun-Ying and Yu, Jin-Yi},
+  journal={Journal of Climate},
+  volume={22},
+  number={3},
+  pages={615--632},
+  year={2009}
+}
+
+@article{yeh2009nino,
+  title={El Ni{\~n}o in a changing climate},
+  author={Yeh, Sang-Wook and Kug, Jong-Seong and Dewitte, Boris and Kwon, Min-Ho and Kirtman, Ben P and Jin, Fei-Fei},
+  journal={Nature},
+  volume={461},
+  number={7263},
+  pages={511--514},
+  year={2009},
+  publisher={Nature Publishing Group}
+}
+
+@article{neiman2011flooding,
+  title={Flooding in Western Washington: the connection to atmospheric rivers*},
+  author={Neiman, Paul J and Schick, Lawrence J and Ralph, F Martin and Hughes, Mimi and Wick, Gary A},
+  journal={Journal of Hydrometeorology},
+  volume={12},
+  number={6},
+  pages={1337--1358},
+  year={2011}
+}
+
+@article{neelin2013california,
+  title="{California winter precipitation change under global warming in the Coupled Model Intercomparison Project phase 5 ensemble}",
+  author={Neelin, J David and Langenbrunner, Baird and Meyerson, Joyce E and Hall, Alex and Berg, Neil},
+  journal={Journal of Climate},
+  volume={26},
+  number={17},
+  pages={6238--6256},
+  year={2013},
+  DOI={10.1175/JCLI-D-12-00514.1}
+}
+
+@article{berg2015increased,
+  title={Increased interannual precipitation extremes over California under climate change},
+  author={Berg, Neil and Hall, Alex},
+  journal={Journal of Climate},
+  volume={28},
+  number={16},
+  pages={6324--6334},
+  year={2015}
+}
+
+@article{larkin2005definition,
+  title="{On the definition of El Ni{\~n}o and associated seasonal average US weather anomalies}",
+  author={Larkin, Narasimhan K and Harrison, DE},
+  journal={Geophysical Research Letters},
+  volume={32},
+  number={13},
+  year={2005},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2005GL022738}
+}
+
+@misc{dettinger2011climate,
+  title="{Climate change, atmospheric rivers, and floods in California--a multimodel analysis of storm frequency and magnitude changes}",
+  author={Dettinger, Michael},
+  year={2011},
+  publisher={Wiley Online Library},
+  DOI={10.1111/j.1752-1688.2011.00546.x}
+}
+
+@article{kahya1994influences,
+  title="{The influences of type 1 El Nino and La Nina events on streamflows in the Pacific southwest of the United States}",
+  author={Kahya, Ercan and Dracup, John A},
+  journal={Journal of Climate},
+  volume={7},
+  number={6},
+  pages={965--976},
+  year={1994},
+  DOI={10.1175/1520-0442(1994)007<0965:TIOTEN>2.0.CO;2}
+}
+
+@article{gao2015dynamical,
+  title="{Dynamical and thermodynamical modulations on future changes of landfalling atmospheric rivers over western North America}",
+  author={Gao, Yang and Lu, Jian and Leung, L Ruby and Yang, Qing and Hagos, Samson and Qian, Yun},
+  journal={Geophysical Research Letters},
+  volume={42},
+  number={17},
+  pages={7179--7186},
+  year={2015},
+  publisher={Wiley Online Library},
+  DOI={10.1002/2015GL065435}
+}
+
+@article{cayan1999enso,
+  title="{ENSO and hydrologic extremes in the western United States}",
+  author={Cayan, Daniel R and Redmond, Kelly T and Riddle, Laurence G},
+  journal={Journal of Climate},
+  volume={12},
+  number={9},
+  pages={2881--2893},
+  year={1999},
+  doi={10.1175/1520-0442(1999)012<2881:EAHEIT>2.0.CO;2}
+}
+
+@article{yoon2015increasing,
+  title="{Increasing water cycle extremes in California and in relation to ENSO cycle under global warming}",
+  author={Yoon, Jin-Ho and Wang, SY Simon and Gillies, Robert R and Kravitz, Ben and Hipps, Lawrence and Rasch, Philip J},
+  journal={Nature Communications},
+  volume={6},
+  year={2015},
+  publisher={Nature Publishing Group},
+  doi={10.1038/ncomms9657}
+}
+
+@article{trenberth2011changes,
+  title={Changes in precipitation with climate change},
+  author={Trenberth, Kevin E},
+  journal={Climate Research},
+  volume={47},
+  number={1},
+  pages={123},
+  year={2011},
+  publisher={Citeseer},
+  doi={10.3354/cr00953}
+}
+
+@article{gershunov1998interdecadal,
+  title="{Interdecadal modulation of ENSO teleconnections}",
+  author={Gershunov, Alexander and Barnett, Tim P},
+  journal={Bulletin of the American Meteorological Society},
+  volume={79},
+  number={12},
+  pages={2715--2725},
+  year={1998},
+  DOI={10.1175/1520-0477(1998)079<2715:IMOET>2.0.CO;2}
+}
+
+@techreport{CAM5Tech,
+	Address = {Boulder, Colorado},
+	Author = {R. B. Neale and C.-C. Chen and A. Gettelman and P. H. Lauritzen and S. Park and D. L. Williamson and A. J. Conley and R. Garcia and D. Kinnison and J.-F. Lamarque and D. Marsh and M. Mills and A. K. Smith and S. Tilmes and F. Vitt and P. Cameron-Smith and W. D. Collins and M. J. Iacono and and R. C. Easter and X. Liu and S. J. Ghan and P. J. Rasch and M. A. Taylor},
+	Institution = {National Center for Atmospheric Research},
+	Number = {NCAR/TN-486+STR},
+	Pages = {268},
+	Title = {Description of the {NCAR} {C}ommunity {A}tmosphere {M}odel ({CAM} 5.0)},
+	Type = {NCAR Technical Note},
+	Year = {2010}}
+	
+@techreport{CLM40Tech,
+	Address = {Boulder, Colorado},
+	Author = {Oleson, K.W. and Lawrence, D.M. and Bonan, G.B. and Flanner, M.G. and Kluzek, E. and Lawrence, P.J. and Levis, S. and Swenson, S.C. and Thornton, P.E. and Dai, A. and Decker, M. and Dickinson, R. and Feddema, J. and Heald, C.L. and Hoffman, F. and Lamarque, J. and Mahowald, N. and Niu, G. and Qian, T. and Randerson, J. and Running, S. and Sakaguchi, K. and Slater, A. and Stockli, R. and Wang, A. and Yang, Z. and Zeng, X. and Zeng, X.},
+	Doi = {10.5065/D6FB50WZ},
+	Institution = {National Center for Atmospheric Research},
+	Number = {NCAR/TN-478+STR},
+	Pages = {257},
+	Title = {Technical Description of version 4.0 of the {C}ommunity {L}and {M}odel ({CLM})},
+	Type = {NCAR Technical Note},
+	Year = {2010},
+	Bdsk-Url-1 = {http://dx.doi.org/10.5065/D6FB50WZ}}
+
+
+
+@incollection{taylor2011conservation,
+  title={Conservation of mass and energy for the moist atmospheric primitive equations on unstructured grids},
+  author={Taylor, Mark A},
+  booktitle={Numerical Techniques for Global Atmospheric Models},
+  pages={357--380},
+  year={2011},
+  publisher={Springer},
+  DOI={10.1007/978-3-642-11640-7_12}
+}
+
+@article{dennis2011cam,
+  title="{CAM-SE: A scalable spectral element dynamical core for the Community Atmosphere Model}",
+  author={Dennis, John and Edwards, Jim and Evans, Katherine J and Guba, Oksana and Lauritzen, Peter H and Mirin, Arthur A and St-Cyr, Amik and Taylor, Mark A and Worley, Patrick H},
+  journal={International Journal of High Performance Computing Applications},
+  pages={1094342011428142},
+  year={2011},
+  publisher={SAGE Publications},
+  doi={10.1177/1094342011428142}
+}
+
+@article{zarzycki2014using,
+  title="{Using variable-resolution meshes to model tropical cyclones in the Community Atmosphere Model}",
+  author={Zarzycki, Colin M and Jablonowski, Christiane and Taylor, Mark A},
+  journal={Monthly Weather Review},
+  volume={142},
+  number={3},
+  pages={1221--1239},
+  year={2014},
+  DOI={10.1175/MWR-D-13-00179.1}
+}
+
+@article{Gates1992,
+	Author = {{Gates}, W.~L.},
+	Journal = {Bulletin of the American Meteorological Society},
+	Month = dec,
+	Pages = {1962--1970},
+	Title = {{AMIP: The Atmospheric Model Intercomparison Project}},
+	Volume = 73,
+	Year = 1992},
+	DOI={10.1175/1520-0477(1992)073<1962:ATAMIP>2.0.CO;2}
+}
+
+@article{small2014new,
+  title={A new synoptic scale resolving global climate simulation using the Community Earth System Model},
+  author={Small, R Justin and Bacmeister, Julio and Bailey, David and Baker, Allison and Bishop, Stuart and Bryan, Frank and Caron, Julie and Dennis, John and Gent, Peter and Hsu, Hsiao-ming and others},
+  journal={Journal of Advances in Modeling Earth Systems},
+  volume={6},
+  number={4},
+  pages={1065--1094},
+  year={2014},
+  publisher={Wiley Online Library},
+  DOI={10.1002/2014MS000363}
+}
+
+@article{stevenson2012will,
+  title={Will there be a significant change to El Ni{\~n}o in the twenty-first century?},
+  author={Stevenson, Samantha and Fox-Kemper, Baylor and Jochum, Markus and Neale, Richard and Deser, Clara and Meehl, Gerald},
+  journal={Journal of Climate},
+  volume={25},
+  number={6},
+  pages={2129--2145},
+  year={2012}
+}
+
+@article{capotondi2013enso,
+  title="{ENSO diversity in the NCAR CCSM4 climate model}",
+  author={Capotondi, Antonietta},
+  journal={Journal of Geophysical Research: Oceans},
+  volume={118},
+  number={10},
+  pages={4755--4770},
+  year={2013},
+  publisher={Wiley Online Library},
+  doi={10.1002/jgrc.20335}
+}
+
+@article{deflorio2013western,
+  title={Western US extreme precipitation events and their relation to ENSO and PDO in CCSM4},
+  author={DeFlorio, Michael J and Pierce, David W and Cayan, Daniel R and Miller, Arthur J},
+  journal={Journal of Climate},
+  volume={26},
+  number={12},
+  pages={4231--4243},
+  year={2013}
+}
+
+@article{deser2012enso,
+  title="{ENSO and Pacific decadal variability in the Community Climate System Model version 4}",
+  author={Deser, Clara and Phillips, Adam S and Tomas, Robert A and Okumura, Yuko M and Alexander, Michael A and Capotondi, Antonietta and Scott, James D and Kwon, Young-Oh and Ohba, Masamichi},
+  journal={Journal of Climate},
+  volume={25},
+  number={8},
+  pages={2622--2651},
+  year={2012},
+  DOI={10.1175/JCLI-D-11-00301.1}
+}
+
+@article{latif2009nino,
+  title="{El Ni{\~n}o/Southern Oscillation response to global warming}",
+  author={Latif, Mojib and Keenlyside, Noel S},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={106},
+  number={49},
+  pages={20578--20583},
+  year={2009},
+  publisher={National Acad Sciences},
+  doi={10.1073/pnas.0710860105}
+}
+
+@article{collins2010impact,
+  title="{The impact of global warming on the tropical Pacific Ocean and El Ni{\~n}o}",
+  author={Collins, Mat and An, Soon-Il and Cai, Wenju and Ganachaud, Alexandre and Guilyardi, Eric and Jin, Fei-Fei and Jochum, Markus and Lengaigne, Matthieu and Power, Scott and Timmermann, Axel and Vecchi, Gabe and Wittenberg, Andrew},
+  journal={Nature Geoscience},
+  volume={3},
+  number={6},
+  pages={391--397},
+  year={2010},
+  publisher={Nature Publishing Group},
+  doi={10.1038/ngeo868}
+}
+
+@article{dinezio2012mean,
+  title="{Mean climate controls on the simulated response of ENSO to increasing greenhouse gases}",
+  author={DiNezio, Pedro N and Kirtman, Ben P and Clement, Amy C and Lee, Sang-Ki and Vecchi, Gabriel A and Wittenberg, Andrew},
+  journal={Journal of Climate},
+  volume={25},
+  number={21},
+  pages={7399--7420},
+  year={2012},
+  DOI={10.1175/JCLI-D-11-00494.1}
+}
+
+@article{jha2014sst,
+  title="{SST and ENSO variability and change simulated in historical experiments of CMIP5 models}",
+  author={Jha, Bhaskar and Hu, Zeng-Zhen and Kumar, Arun},
+  journal={Climate Dynamics},
+  volume={42},
+  number={7-8},
+  pages={2113--2124},
+  year={2014},
+  publisher={Springer},
+  DOI={10.1007/s00382-013-1803-z}
+}
+
+@article{schneider2009statistical,
+  title={A statistical-dynamical estimate of winter ENSO teleconnections in a future climate},
+  author={Schneider, Edwin K and Fennessy, Michael J and Kinter III, James L},
+  journal={Journal of Climate},
+  volume={22},
+  number={24},
+  pages={6624--6638},
+  year={2009}
+}
+
+@article{zhang2014enso,
+  title={ENSO asymmetry in CMIP5 models},
+  author={Zhang, Tao and Sun, De-Zheng},
+  journal={Journal of Climate},
+  volume={27},
+  number={11},
+  pages={4070--4093},
+  year={2014}
+}
+
+@article{taschetto2014cold,
+  title="{Cold tongue and warm pool ENSO events in CMIP5: mean state and future projections}",
+  author={Taschetto, Andr{\'e}a S and Gupta, Alexander Sen and Jourdain, Nicolas C and Santoso, Agus and Ummenhofer, Caroline C and England, Matthew H},
+  journal={Journal of Climate},
+  volume={27},
+  number={8},
+  pages={2861--2885},
+  year={2014},
+  DOI={10.1175/JCLI-D-13-00437.1}
+}
+
+@article{philip2006shifts,
+  title={Shifts in ENSO coupling processes under global warming},
+  author={Philip, Sjoukje and Van Oldenborgh, Geert Jan},
+  journal={Geophysical Research Letters},
+  volume={33},
+  number={11},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+@article{stevenson2012significant,
+  title="{Significant changes to ENSO strength and impacts in the twenty-first century: Results from CMIP5}",
+  author={Stevenson, SL},
+  journal={Geophysical Research Letters},
+  volume={39},
+  number={17},
+  year={2012},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2012GL052759}
+}
+
+@article{joseph2006enso,
+  title="{ENSO evolution and teleconnections in IPCC's twentieth-century climate simulations: Realistic representation?}",
+  author={Joseph, Renu and Nigam, Sumant},
+  journal={Journal of Climate},
+  volume={19},
+  number={17},
+  pages={4360--4377},
+  year={2006},
+  DOI={10.1175/JCLI3846.1}
+}
+
+@article{achutarao2006enso,
+  title="{ENSO simulation in coupled ocean-atmosphere models: are the current models better?}",
+  author={AchutaRao, Krishna and Sperber, Kenneth R},
+  journal={Climate Dynamics},
+  volume={27},
+  number={1},
+  pages={1--15},
+  year={2006},
+  publisher={Springer},
+  doi={10.1007/s00382-006-0119-7}
+}
+
+@misc{noaaElNino,
+  title = "{Defining El Ni{\~n}o and La Ni{\~n}a}",
+  author = {NOAA},
+  year = {2013},
+  howpublished = {\url{https://www.climate.gov/news-features/understanding-climate/watching-el-niño-and-la-niña-noaa-adapts-global-warming}},
+  note = {Accessed 2015-08-20}
+}
+
+@article{maloney2014north,
+  title="{North American climate in CMIP5 experiments: part iii: assessment of twenty-first-century projections}",
+  author={Maloney, Eric D and Camargo, Suzana J and Chang, Edmund and Colle, Brian and Fu, Rong and Geil, Kerrie L and Hu, Qi and Jiang, Xianan and Johnson, Nathaniel and Karnauskas, Kristopher B and others},
+  journal={Journal of Climate},
+  volume={27},
+  number={6},
+  pages={2230--2270},
+  year={2014},
+  DOI={10.1175/JCLI-D-13-00273.1}
+}
+
+@article{dominguez2012changes,
+  title="{Changes in winter precipitation extremes for the western United States under a warmer climate as simulated by regional climate models}",
+  author={Dominguez, Francina and Rivera, E and Lettenmaier, DP and Castro, CL},
+  journal={Geophysical Research Letters},
+  volume={39},
+  number={5},
+  year={2012},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2011GL050762}
+}
+
+@article{grodsky2012tropical,
+  title="{Tropical Atlantic biases in CCSM4}",
+  author={Grodsky, Semyon A and Carton, James A and Nigam, Sumant and Okumura, Yuko M},
+  journal={Journal of Climate},
+  volume={25},
+  number={11},
+  pages={3684--3701},
+  year={2012},
+  DOI={10.1175/JCLI-D-11-00315.1}
+}
+
+@article{huang2016irrigation,
+  title="{Irrigation impacts on California's climate with the variable-resolution CESM}",
+  author={Huang, Xingying and Ullrich, Paul A},
+  journal={Journal of Advances in Modeling Earth Systems},
+  year={2016},
+  publisher={Wiley Online Library},
+  DOI={10.1002/2016MS000656}
+ } 
+  
+@incollection{karl1999clivar,
+  title="{Clivar/GCOS/WMO workshop on indices and indicators for climate extremes workshop summary}",
+  author={Karl, Thomas R and Nicholls, Neville and Ghazi, Anver},
+  booktitle={Weather and Climate Extremes},
+  pages={3--7},
+  year={1999},
+  publisher={Springer},
+  DOI={10.1023/A:1005491526870}
+}
+
+@article{walker2009evaluation,
+  title="{Evaluation of high-resolution simulations of daily-scale temperature and precipitation over the United States}",
+  author={Walker, Megan D and Diffenbaugh, Noah S},
+  journal={Climate Dynamics},
+  volume={33},
+  number={7-8},
+  pages={1131--1147},
+  year={2009},
+  publisher={Springer},
+  DOI={10.1007/s00382-009-0603-y}
+}
+
+@article{donat2016more,
+  title={More extreme precipitation in the world's dry and wet regions},
+  author={Donat, Markus G and Lowry, Andrew L and Alexander, Lisa V and O’Gorman, Paul A and Maher, Nicola},
+  journal={Nature Climate Change},
+  year={2016},
+  publisher={Nature Publishing Group},
+  doi={10.1038/nclimate2941}
+}
+
+@article{cai2014increasing,
+  title="{Increasing frequency of extreme El Ni{\~n}o events due to greenhouse warming}",
+  author={Cai, Wenju and Borlace, Simon and Lengaigne, Matthieu and Van Rensch, Peter and Collins, Mat and Vecchi, Gabriel and Timmermann, Axel and Santoso, Agus and McPhaden, Michael J and Wu, Lixin and others},
+  journal={Nature Climate Change},
+  volume={4},
+  number={2},
+  pages={111--116},
+  year={2014},
+  publisher={Nature Publishing Group},
+  doi={10.1038/nclimate2100}
+}
+
+
+@article{morrison2008new,
+  title="{A new two-moment bulk stratiform cloud microphysics scheme in the Community Atmosphere Model, version 3 (CAM3). Part I: Description and numerical tests}",
+  author={Morrison, Hugh and Gettelman, Andrew},
+  journal={Journal of Climate},
+  volume={21},
+  number={15},
+  pages={3642--3659},
+  year={2008},
+  DOI={10.1175/2008JCLI2105.1}
+}
+
+@article{gettelman2008new,
+  title="{A new two-moment bulk stratiform cloud microphysics scheme in the Community Atmosphere Model, version 3 (CAM3). Part II: Single-column and global results}",
+  author={Gettelman, A and Morrison, H and Ghan, Steven J},
+  journal={Journal of Climate},
+  volume={21},
+  number={15},
+  pages={3660--3679},
+  year={2008},
+  DOI={10.1175/2008JCLI2116.1}
+}
+
+@article{stephens2010dreary,
+  title={Dreary state of precipitation in global models},
+  author={Stephens, Graeme L and L'Ecuyer, Tristan and Forbes, Richard and Gettlemen, Andrew and Golaz, Jean-Christophe and Bodas-Salcedo, Alejandro and Suzuki, Kentaroh and Gabriel, Philip and Haynes, John},
+  journal={Journal of Geophysical Research: Atmospheres},
+  volume={115},
+  number={D24},
+  year={2010},
+  publisher={Wiley Online Library},
+  DOI={10.1029/2010JD014532}
+}
+
+@article{rhoades2016projecting,
+   title="{Projecting 21st century snowpack trends in western USA mountains using variable-resolution CESM}",
+   author={Rhoades, A.~M. and Ullrich, P.~A. and Zarzycki, C.~M.},
+   journal={Climate Dynamics},
+   year={2016},
+   note={Under review}
+}
+
+@article{wilkinson2002preparing,
+  title="{Preparing for a changing climate: the potential consequences of climate variability and change for California}",
+  author={Wilkinson, Robert and Clarke, K and Reichman, J and Dozier, J},
+  journal={Report for the US Global Change Research Program},
+  year={2002}
+}
+
+@article{skamarock2008time,
+  title="{A time-split nonhydrostatic atmospheric model for weather research and forecasting applications}",
+  author={Skamarock, William C and Klemp, Joseph B},
+  journal={Journal of Computational Physics},
+  volume={227},
+  number={7},
+  pages={3465--3485},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{walton2017incorporating,
+  title="{Incorporating snow albedo feedback into downscaled temperature and snow cover projections for California’s Sierra Nevada}",
+  author={Walton, Daniel B and Hall, Alex and Berg, Neil and Schwartz, Marla and Sun, Fengpeng},
+  journal={Journal of Climate},
+  volume={30},
+  number={4},
+  pages={1417--1438},
+  year={2017}
+}
+
+@article{sun2016twenty,
+  title="{Twenty-First-Century Snowfall and Snowpack Changes over the Southern California Mountains}",
+  author={Sun, Fengpeng and Hall, Alex and Schwartz, Marla and Walton, Daniel B and Berg, Neil},
+  journal={Journal of Climate},
+  volume={29},
+  number={1},
+  pages={91--110},
+  year={2016}
+}
+
+@article{berg2017anthropogenic,
+  title="{Anthropogenic warming impacts on California snowpack during drought}",
+  author={Berg, Neil and Hall, Alex},
+  journal={Geophysical Research Letters},
+  volume={44},
+  number={5},
+  pages={2511--2518},
+  year={2017},
+  publisher={Wiley Online Library}
+}
+
+@article{thompson2008explicit,
+  title="{Explicit forecasts of winter precipitation using an improved bulk microphysics scheme. Part II: Implementation of a new snow parameterization}",
+  author={Thompson, Gregory and Field, Paul R and Rasmussen, Roy M and Hall, William D},
+  journal={Monthly Weather Review},
+  volume={136},
+  number={12},
+  pages={5095--5115},
+  year={2008}
+}
+
+@article{niu2011community,
+  title="{The community Noah land surface model with multiparameterization options (Noah-MP): 1. Model description and evaluation with local-scale measurements}",
+  author={Niu, Guo-Yue and Yang, Zong-Liang and Mitchell, Kenneth E and Chen, Fei and Ek, Michael B and Barlage, Michael and Kumar, Anil and Manning, Kevin and Niyogi, Dev and Rosero, Enrique and others},
+  journal={Journal of Geophysical Research: Atmospheres},
+  volume={116},
+  number={D12},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@article{swain2014extraordinary,
+  title="{The extraordinary California drought of 2013/2014: Character, context, and the role of climate change}",
+  author={Swain, Daniel L and Tsiang, Michael and Haugen, Matz and Singh, Deepti and Charland, Allison and Rajaratnam, Bala and Diffenbaugh, Noah S},
+  journal={Bulletin of the American Meteorological Society},
+  volume={95},
+  number={9},
+  pages={S3},
+  year={2014},
+  publisher={American Meteorological Society}
+}
+
+@article{seager2014causes,
+  title="{Causes and predictability of the 2011--14 California drought}",
+  author={Seager, RICHARD and Hoerling, MARTIN and Schubert, SIEGFRIED and Wang, HAILAN and Lyon, BRADFIELD and Kumar, ARUN and Nakamura, JENNIFER and Henderson, NAOMI},
+  journal={Available a t cpo. noaa. gov/ClimatePrograms/ModelingAnalysisPredictionsandProjections/MAPPTaskForces},
+  year={2014}
+}
+
+@article{kapnick2010observed,
+  title={"Observed climate--snowpack relationships in California and their implications for the future"},
+  author={Kapnick, Sarah and Hall, Alex},
+  journal={Journal of Climate},
+  volume={23},
+  number={13},
+  pages={3446--3456},
+  year={2010}
+}
+
+@article{maurer2007uncertainty,
+  title="{Uncertainty in hydrologic impacts of climate change in the Sierra Nevada, California, under two emissions scenarios}",
+  author={Maurer, Edwin P},
+  journal={Climatic Change},
+  volume={82},
+  number={3-4},
+  pages={309--325},
+  year={2007},
+  publisher={Springer}
+}
+
+@article{mao2015climate,
+  title="{Is climate change implicated in the 2013--2014 California drought? A hydrologic perspective}",
+  author={Mao, Yixin and Nijssen, Bart and Lettenmaier, Dennis P},
+  journal={Geophysical Research Letters},
+  volume={42},
+  number={8},
+  pages={2805--2813},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@book{stocker2014climate,
+  title="{Climate change 2013: the physical science basis: Working Group I contribution to the Fifth assessment report of the Intergovernmental Panel on Climate Change}",
+  author={Stocker, Thomas},
+  year={2014},
+  publisher={Cambridge University Press}
+}
+
+@article{taylor2012overview,
+  title="{An overview of CMIP5 and the experiment design}",
+  author={Taylor, Karl E and Stouffer, Ronald J and Meehl, Gerald A},
+  journal={Bulletin of the American Meteorological Society},
+  volume={93},
+  number={4},
+  pages={485--498},
+  year={2012},
+  publisher={American Meteorological Society}
+}
+
+@article{huang2017changing,
+  title="{The changing character of 21st century precipitation over the western United States in the variable-resolution CESM}",
+  author={Huang, Xingying and Ullrich, Paul A},
+  journal={Journal of Climate},
+  volume={30},
+  number={18},
+  pages={7555--7575},
+  year={2017}
+}
+
+@misc{cdec2017,
+  title = "{California Department of Water Resources}",
+  author = {CDWR},
+  year = {2017},
+  howpublished = {\url{http://cdec.water.ca.gov}},
+  note = {Accessed 2017-03-17}
+}
+
+@misc{CNN2017,
+  title = "{Cable News Network}",
+  author = {CNN},
+  year = {2017},
+  howpublished = {\url{http://www.cnn.com/2017/02/12/us/california-oroville-dam-failure/}},
+  note = {Accessed 2017-02-23}
+}
+
+@misc{cdec,
+  title = "{California Department of Water Resources}",
+  author = {CDWR},
+  year = {2017},
+  howpublished = {\url{http://cdec.water.ca.gov/snow/current/snow/index.html}},
+  note = {Accessed 2017-04-25}
+}
+
+@misc{Jepson,
+  title = "{Jepson Flora Project (eds.)}",
+  author = {Jepson Herbarium},
+  year = {2017},
+  howpublished = {\url{http://ucjeps.berkeley.edu/eflora/}},
+  note = {Accessed 2017-03-20}
+}
+
+@article {Bl{\"o}schl588,
+	author = {Bl{\"o}schl, G{\"u}nter and Hall, Julia and Parajka, Juraj and Perdig{\~a}o, Rui A. P. and Merz, Bruno and Arheimer, Berit and Aronica, Giuseppe T. and Bilibashi, Ardian and Bonacci, Ognjen and Borga, Marco and {\v C}anjevac, Ivan and Castellarin, Attilio and Chirico, Giovanni B. and Claps, Pierluigi and Fiala, K{\'a}roly and Frolova, Natalia and Gorbachova, Liudmyla and G{\"u}l, Ali and Hannaford, Jamie and Harrigan, Shaun and Kireeva, Maria and Kiss, Andrea and Kjeldsen, Thomas R. and Kohnov{\'a}, Silvia and Koskela, Jarkko J. and Ledvinka, Ondrej and Macdonald, Neil and Mavrova-Guirguinova, Maria and Mediero, Luis and Merz, Ralf and Molnar, Peter and Montanari, Alberto and Murphy, Conor and Osuch, Marzena and Ovcharuk, Valeryia and Radevski, Ivan and Rogger, Magdalena and Salinas, Jos{\'e} L. and Sauquet, Eric and {\v S}raj, Mojca and Szolgay, Jan and Viglione, Alberto and Volpi, Elena and Wilson, Donna and Zaimi, Klodian and {\v Z}ivkovi{\'c}, Nenad},
+	title = {Changing climate shifts timing of European floods},
+	volume = {357},
+	number = {6351},
+	pages = {588--590},
+	year = {2017},
+	doi = {10.1126/science.aan2506},
+	publisher = {American Association for the Advancement of Science},
+		issn = {0036-8075},
+	URL = {http://science.sciencemag.org/content/357/6351/588},
+	eprint = {http://science.sciencemag.org/content/357/6351/588.full.pdf},
+	journal = {Science}
+}
+
+@article{von2000spectral,
+  title={A spectral nudging technique for dynamical downscaling purposes},
+  author={von Storch, Hans and Langenberg, Heike and Feser, Frauke},
+  journal={Monthly weather review},
+  volume={128},
+  number={10},
+  pages={3664--3673},
+  year={2000}
+}
+
+@article{hagos2016projection,
+  title="{A projection of changes in landfalling atmospheric river frequency and extreme precipitation over western North America from the Large Ensemble CESM simulations}",
+  author={Hagos, Samson M and Leung, L Ruby and Yoon, Jin-Ho and Lu, Jian and Gao, Yang},
+  journal={Geophysical Research Letters},
+  volume={43},
+  number={3},
+  pages={1357--1363},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{vahedifard2017lessons,
+  title="{Lessons from the Oroville dam}",
+  author={Vahedifard, Farshid and AghaKouchak, Amir and Ragno, Elisa and Shahrokhabadi, Shahriar and Mallakpour, Iman},
+  journal={Science},
+  volume={355},
+  number={6330},
+  pages={1139--1140},
+  year={2017},
+  publisher={American Association for the Advancement of Science},
+  DOI={10.1126/science.aan0171}
+}
+
+@article{zhu1998proposed,
+  title={A proposed algorithm for moisture fluxes from atmospheric rivers},
+  author={Zhu, Yong and Newell, Reginald E},
+  journal={Monthly weather review},
+  volume={126},
+  number={3},
+  pages={725--735},
+  year={1998}
+}
+
+@article{ralph2006flooding,
+  title="{Flooding on California's Russian River: Role of atmospheric rivers}",
+  author={Ralph, F Martin and Neiman, Paul J and Wick, Gary A and Gutman, Seth I and Dettinger, Michael D and Cayan, Daniel R and White, Allen B},
+  journal={Geophysical Research Letters},
+  volume={33},
+  number={13},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+@article{rutz2014climatological,
+  title="{Climatological characteristics of atmospheric rivers and their inland penetration over the western United States}",
+  author={Rutz, Jonathan J and Steenburgh, W James and Ralph, F Martin},
+  journal={Monthly Weather Review},
+  volume={142},
+  number={2},
+  pages={905--921},
+  year={2014}
+}
+
+@article{dettinger2011atmospheric,
+  title="{Atmospheric rivers, floods and the water resources of California}",
+  author={Dettinger, Michael D and Ralph, Fred Martin and Das, Tapash and Neiman, Paul J and Cayan, Daniel R},
+  journal={Water},
+  volume={3},
+  number={2},
+  pages={445--478},
+  year={2011},
+  publisher={Molecular Diversity Preservation International}
+}
+
+@article{zhang2018uncovering,
+  title="{Uncovering the role of the East Asian jet stream and heterogeneities in atmospheric rivers affecting the western United States}",
+  author={Zhang, Wei and Villarini, Gabriele},
+  journal={Proceedings of the National Academy of Sciences},
+  pages={201717883},
+  year={2018},
+  publisher={National Acad Sciences}
+}
+
+@article{guan2016hydrometeorological,
+  title={Hydrometeorological characteristics of rain-on-snow events associated with atmospheric rivers},
+  author={Guan, Bin and Waliser, Duane E and Ralph, F Martin and Fetzer, Eric J and Neiman, Paul J},
+  journal={Geophysical Research Letters},
+  volume={43},
+  number={6},
+  pages={2964--2973},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{kim2018winter,
+  title="{Winter precipitation characteristics in western US related to atmospheric river landfalls: observations and model evaluations}",
+  author={Kim, J and Guan, B and Waliser, DE and Ferraro, RD and Case, JL and Iguchi, T and Kemp, E and Putman, W and Wang, W and Wu, D and others},
+  journal={Climate Dynamics},
+  volume={50},
+  number={1-2},
+  pages={231--248},
+  year={2018},
+  publisher={Springer}
+}
+
+@article{guan2015detection,
+  title="{Detection of atmospheric rivers: Evaluation and application of an algorithm for global studies}",
+  author={Guan, Bin and Waliser, Duane E},
+  journal={Journal of Geophysical Research: Atmospheres},
+  volume={120},
+  number={24},
+  pages={12514--12535},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{ralph2012atmospheric,
+  title="{Atmospheric rivers in reanalysis products: A six-event comparison with aircraft observations of water vapor transport}",
+  author={Ralph, FM and Wick, GA and Neiman, PJ and Moore, BJ and Spackman, JR and Hughes, Mimi and Yong, F and Hock, T},
+  booktitle={Extended Abstracts, WCRP Reanalysis Conf., Silver Spring, MD},
+  year={2012}
+}
+
+@article{rienecker2011merra,
+  title="{MERRA: NASA’s modern-era retrospective analysis for research and applications}",
+  author={Rienecker, Michele M and Suarez, Max J and Gelaro, Ronald and Todling, Ricardo and Bacmeister, Julio and Liu, Emily and Bosilovich, Michael G and Schubert, Siegfried D and Takacs, Lawrence and Kim, Gi-Kong and others},
+  journal={Journal of climate},
+  volume={24},
+  number={14},
+  pages={3624--3648},
+  year={2011}
+}
+
+@article{hagos2016projection,
+  title="{A projection of changes in landfalling atmospheric river frequency and extreme precipitation over western North America from the Large Ensemble CESM simulations}",
+  author={Hagos, Samson M and Leung, L Ruby and Yoon, Jin-Ho and Lu, Jian and Gao, Yang},
+  journal={Geophysical Research Letters},
+  volume={43},
+  number={3},
+  pages={1357--1363},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{guan2012does,
+  title="{Does the Madden--Julian oscillation influence wintertime atmospheric rivers and snowpack in the Sierra Nevada?}",
+  author={Guan, Bin and Waliser, Duane E and Molotch, Noah P and Fetzer, Eric J and Neiman, Paul J},
+  journal={Monthly Weather Review},
+  volume={140},
+  number={2},
+  pages={325--342},
+  year={2012}
+}
+
+@article{ralph2013observed,
+  title="{Observed impacts of duration and seasonality of atmospheric-river landfalls on soil moisture and runoff in coastal northern California}",
+  author={Ralph, FM and Coleman, T and Neiman, PJ and Zamora, RJ and Dettinger, MD},
+  journal={Journal of Hydrometeorology},
+  volume={14},
+  number={2},
+  pages={443--459},
+  year={2013}
+}
+
+@article{hay2003use,
+  title="{Use of statistically and dynamically downscaled atmospheric model output for hydrologic simulations in three mountainous basins in the western United States}",
+  author={Hay, Lauren E and Clark, MP},
+  journal={Journal of Hydrology},
+  volume={282},
+  number={1-4},
+  pages={56--75},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@article{warner2015changes,
+  title={Changes in winter atmospheric rivers along the North American west coast in CMIP5 climate models},
+  author={Warner, Michael D and Mass, Clifford F and Salath{\'e} Jr, Eric P},
+  journal={Journal of Hydrometeorology},
+  volume={16},
+  number={1},
+  pages={118--128},
+  year={2015}
+}
+
+@article{guan2010extreme,
+  title={Extreme snowfall events linked to atmospheric rivers and surface air temperature via satellite measurements},
+  author={Guan, Bin and Molotch, Noah P and Waliser, Duane E and Fetzer, Eric J and Neiman, Paul J},
+  journal={Geophysical Research Letters},
+  volume={37},
+  number={20},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{dettinger2013atmospheric,
+  title={Atmospheric rivers as drought busters on the US West Coast},
+  author={Dettinger, Michael D},
+  journal={Journal of Hydrometeorology},
+  volume={14},
+  number={6},
+  pages={1721--1732},
+  year={2013}
+}
+
+@article{payne2014dynamics,
+  title={Dynamics of landfalling atmospheric rivers over the North Pacific in 30 years of MERRA reanalysis},
+  author={Payne, Ashley E and Magnusdottir, Gudrun},
+  journal={Journal of Climate},
+  volume={27},
+  number={18},
+  pages={7133--7150},
+  year={2014}
+}
+
+@article{jackson2016evaluation,
+  title="{Evaluation of landfalling atmospheric rivers along the US West Coast in reanalysis data sets}",
+  author={Jackson, Darren L and Hughes, Mimi and Wick, Gary A},
+  journal={Journal of Geophysical Research: Atmospheres},
+  volume={121},
+  number={6},
+  pages={2705--2718},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{mundhenk2016modulation,
+  title="{Modulation of atmospheric rivers near Alaska and the US West Coast by northeast Pacific height anomalies}",
+  author={Mundhenk, Bryan D and Barnes, Elizabeth A and Maloney, Eric D and Nardi, Kyle M},
+  journal={Journal of Geophysical Research: Atmospheres},
+  volume={121},
+  number={21},
+  year={2016},
+  publisher={Wiley Online Library}
+}
